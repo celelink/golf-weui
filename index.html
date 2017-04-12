@@ -1,11 +1,13 @@
 <!doctype html>
 <html>
+
 	<head>
 		<meta charset="utf-8">
 		<title>首页</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
 		<link rel="stylesheet" href="css/weuix.min.css" />
 	</head>
+
 	<body ontouchstart style="background-color: #f8f8f8;">
 		<!--底部选项切换时此处不会消失
 		<div class="page-hd">
@@ -18,16 +20,57 @@
 		<div class="weui_tab tab-bottom">
 			<div class="weui_tab_bd">
 				<div class="weui_tab_bd_item">
-					<h3>首页</h3>
+					<!--首页选项卡-->
+					<div class="slide" id="slide1">
+						<ul>
+							<li>
+								<a href="#">
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="http://7xr193.com1.z0.glb.clouddn.com/1.jpg" alt="">
+								</a>
+								<div class="slide-desc">尼克劳斯:加西亚用气势征服冠军 一度为其丢杆担心</div>
+							</li>
+							<li>
+								<a href="#">
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="http://7xr193.com1.z0.glb.clouddn.com/2.jpg" alt="">
+								</a>
+								<div class="slide-desc">白老虎霍夫曼错失大师赛门票 罗斯用HelloKitty解压</div>
+							</li>
+							<li>
+								<a href="#">
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="http://7xr193.com1.z0.glb.clouddn.com/3.jpg" alt="">
+								</a>
+								<div class="slide-desc">新奥尔良精英赛戴伊搭档福勒 潘政琮与布莱尔组合</div>
+							</li>
+						</ul>
+						<div class="dot">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
 				</div>
+				<!--球馆加盟选项课-->
 				<div class="weui_tab_bd_item">
 					<h3>球馆加盟</h3>
 				</div>
+				<!--商城选项卡-->
 				<div class="weui_tab_bd_item">
 					<h3>乐众商城</h3>
 				</div>
+				<!--个人设置选项卡-->
 				<div class="weui_tab_bd_item">
-					<h3>个人设置</h3>
+					<div class="weui_cells">
+						<div class="weui_cell">
+							<div class="weui_cell_hd" style="position: relative;margin-right: 10px;">
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAeFBMVEUAwAD///+U5ZTc9twOww7G8MYwzDCH4YcfyR9x23Hw+/DY9dhm2WZG0kbT9NP0/PTL8sux7LFe115T1VM+zz7i+OIXxhes6qxr2mvA8MCe6J6M4oz6/frr+us5zjn2/fa67rqB4IF13XWn6ad83nxa1loqyirn+eccHxx4AAAC/klEQVRo3u2W2ZKiQBBF8wpCNSCyLwri7v//4bRIFVXoTBBB+DAReV5sG6lTXDITiGEYhmEYhmEYhmEYhmEY5v9i5fsZGRx9PyGDne8f6K9cfd+mKXe1yNG/0CcqYE86AkBMBh66f20deBc7wA/1WFiTwvSEpBMA2JJOBsSLxe/4QEEaJRrASP8EVF8Q74GbmevKg0saa0B8QbwBdjRyADYxIhqxAZ++IKYtciPXLQVG+imw+oo4Bu56rjEJ4GYsvPmKOAB+xlz7L5aevqUXuePWVhvWJ4eWiwUQ67mK51qPj4dFDMlRLBZTqF3SDvmr4BwtkECu5gHWPkmDfQh02WLxXuvbvC8ku8F57GsI5e0CmUwLz1kq3kD17R1In5816rGvQ5VMk5FEtIiWislTffuDpl/k/PzscdQsv8r9qWq4LRWX6tQYtTxvI3XyrwdyQxChXioOngH3dLgOFjk0all56XRi/wDFQrGQU3Os5t0wJu1GNtNKHdPqYaGYQuRDfbfDf26AGLYSyGS3ZAK4S8XuoAlxGSdYMKwqZKM9XJMtyqXi7HX/CiAZS6d8bSVUz5J36mEMFDTlAFQzxOT1dzLRljjB6+++ejFqka+mXIe6F59mw22OuOw1F4T6lg/9VjL1rLDoI9Xzl1MSYDNHnPQnt3D1EE7PrXjye/3pVpr1Z45hMUdcACc5NVQI0bOdS1WA0wuz73e7/5TNqBPhQXPEFGJNV2zNqWI7QKBd2Gn6AiBko02zuAOXeWIXjV0jNqdKegaE/kJQ6Bfs4aju04lMLkA2T5wBSYPKDGF3RKhFYEa6A1L1LG2yacmsaZ6YPOSAMKNsO+N5dNTfkc5Aqe26uxHpx7ZirvgCwJpWq/lmX1hA7LyabQ34tt5RiJKXSwQ+0KU0V5xg+hZrd4Bn1n4EID+WkQdgLfRNtvil9SPfwy+WQ7PFBWQz6dGWZBLkeJFXZGCfLUjCgGgqXo5TuSu3cugdcTv/HjqnBTEMwzAMwzAMwzAMwzAMw/zf/AFbXiOA6frlMAAAAABJRU5ErkJggg==" style="width: 50px;display: block" />
+								<span class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</span>
+							</div>
+							<div class="weui_cell_bd">
+								<p>联系人名称</p>
+								<p style="font-size: 13px;color: #888888;">摘要信息</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!--底部导航-->
@@ -59,33 +102,48 @@
 			</div>
 		</div>
 		<script src="js/zepto.min.js"></script>
+		<!--无缝滚动插件-->
 		<script src="js/iscroll.js"></script>
+		<!--轮播图插件-->
+		<script src="js/swipe.js"></script>
 		<script>
 			$(function() {
+				//选项卡切换的控制操作
 				$('.weui_tab').tab({
 					defaultIndex: 0,
 					activeClass: 'weui_bar_item_on',
 					onToggle: function(index) {
 						if(index > 0) {
-							var tar=$(".weui_tabbar_label");
-							document.title=tar[index].innerHTML;
+							var tar = $(".weui_tabbar_label");
+							document.title = tar[index].innerHTML;
 						}
 					}
 				});
+				//搜索框的控制操作
 				$('.searchbar_wrap').searchBar({
 					cancelText: "取消",
 					searchText: '关键字',
-					onfocus: function(value) {
-					},
-					onblur: function(value) {
-					},
-					oninput: function(value) {
-					},
+					onfocus: function(value) {},
+					onblur: function(value) {},
+					oninput: function(value) {},
 					onsubmit: function(value) {},
-					oncancel: function() {
-					},
+					oncancel: function() {},
 					onclear: function() {
 
+					}
+				});
+				//轮播图的控制操作
+				$('#slide1').swipeSlide({
+					autoSwipe: true, //自动切换默认是
+					speed: 3000, //速度默认4000
+					continuousScroll: true, //默认否
+					transitionType: 'cubic-bezier(0.22, 0.69, 0.72, 0.88)', //过渡动画linear/ease/ease-in/ease-out/ease-in-out/cubic-bezier
+					lazyLoad: true, //懒加载默认否
+					firstCallback: function(i, sum, me) {
+						me.find('.dot').children().first().addClass('cur');
+					},
+					callback: function(i, sum, me) {
+						me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
 					}
 				});
 
