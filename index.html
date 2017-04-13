@@ -172,6 +172,7 @@
 							var tar = $(".weui_tabbar_label");
 							document.title = tar[index].innerHTML;
 						}
+						sessionStorage.setItem("stateold", index);
 					}
 				});
 				//搜索框的控制操作
@@ -201,21 +202,8 @@
 						me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
 					}
 				});
-				$(function() {
-					pushHistory();
-					window.addEventListener("popstate", function(e) {
-						alert("我监听到了浏览器的返回按钮事件啦"); //根据自己的需求实现自己的功能  
-					}, false);
-
-					function pushHistory() {
-						var state = {
-							title: "title",
-							url: "#"
-						};
-						window.history.pushState(state, "title", "#");
-					}
-
-				});
+				var index=sessionStorage.getItem("statenew");
+				$('.weui_tabbar a')[index].className='weui_tabbar_item weui_bar_item_on';
 			});
 		</script>
 	</body>
