@@ -10,13 +10,6 @@
 	</head>
 
 	<body ontouchstart style="background-color: #f8f8f8;">
-		<!--底部选项切换时此处不会消失
-		<div class="page-hd">
-			<p class="page-hd-desc">全局使用</p>
-		</div>
-		搜索框的承载体
-		<div class="searchbar_wrap">-->
-		</div>
 		<div class="weui_cells_title" style="height:45px;">&nbsp;</div>
 		<div class="weui_tab tab-bottom">
 			<div class="weui_tab_bd">
@@ -208,7 +201,21 @@
 						me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
 					}
 				});
+				$(function() {
+					pushHistory();
+					window.addEventListener("popstate", function(e) {
+						alert("我监听到了浏览器的返回按钮事件啦"); //根据自己的需求实现自己的功能  
+					}, false);
 
+					function pushHistory() {
+						var state = {
+							title: "title",
+							url: "#"
+						};
+						window.history.pushState(state, "title", "#");
+					}
+
+				});
 			});
 		</script>
 	</body>
