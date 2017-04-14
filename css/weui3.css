@@ -1,3 +1,47 @@
+/*球馆加盟样式*/
+.router-view {
+    width: 100%;
+    top: 46px;
+}
+.vux-masker-box {
+    position: relative;
+}
+/*图片的样式处理*/
+.m-img {
+    padding-bottom: 33%;
+    display: block;
+    position: relative;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+    border-radius: 2px;
+}
+/*球馆加盟标题的样式*/
+.vux-masker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: inherit;
+}
+/*文字的定位以及样式*/
+.m-title {
+    color: #fff;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .icon-80{
 	position:absolute;
 	top:.5em;
