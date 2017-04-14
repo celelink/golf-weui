@@ -1058,7 +1058,7 @@ input.weui_btn_plain_default {
 }
 
 .weui_tabbar_icon+.weui_tabbar_label {
-	margin: 5px 0 2px;
+	margin: 5px 0 0;
 }
 
 .weui_tabbar_label {
