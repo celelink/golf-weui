@@ -6,6 +6,7 @@
 		<title>首页</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
 		<link rel="stylesheet" href="css/weuix.min.css" />
+		<link rel="stylesheet" href="https://at.alicdn.com/t/font_qjwjwooh33wpzaor.css" />
 		<link rel="stylesheet" type="text/css" href="css/weui3.css" />
 	</head>
 
@@ -42,7 +43,7 @@
 							<span></span>
 						</div>
 					</div>
-					<div class="weui_panel weui_panel_access">
+					<div class="weui_panel weui_panel_access weui_panels">
 
 						<div class="weui_panel_bd">
 							<a href="cell4_.html" class="weui_media_box weui_media_appmsg">
@@ -57,6 +58,27 @@
 				</div>
 				<!--球馆加盟选项课-->
 				<div class="weui_tab_bd_item">
+
+					<div class="weui_cells">
+
+						<div class="weui_cell">
+							<div class="weui_cell_bd weui_cell_primary">
+								<p>上海市松江区<span class="icon icon-68"></span></p>
+							</div>
+							<div class="weui_cell_ft">
+								<select name="city" id="">
+									<option value="bj">北京市</option>
+									<option value="sh">上海市</option>
+									<option value="zj">浙江省</option>
+									<option value="fj">福建省</option>
+									<option value="jx">江西省</option>
+									<option value="yn">云南省</option>
+									<option value="hn">湖南省</option>
+									<option value="js">江苏省</option>
+								</select>
+							</div>
+						</div>
+					</div>
 					<div class="router-view">
 						<div style="margin: 10px; overflow: hidden;">
 							<a href="details.html">
@@ -186,27 +208,19 @@
 			<!--底部导航-->
 			<div class="weui_tabbar ">
 				<a href="javascript:;" class="weui_tabbar_item">
-					<div class="weui_tabbar_icon">
-						<img src="images/icon_nav_msg.png" alt="">
-					</div>
+					<div class="weui_tabbar_icon iconfont icon-jiamengweixuanzhong"></div>
 					<p class="weui_tabbar_label">首页</p>
 				</a>
 				<a href="javascript:;" class="weui_tabbar_item">
-					<div class="weui_tabbar_icon">
-						<img src="images/icon_nav_article.png" alt="">
-					</div>
+					<div class="weui_tabbar_icon iconfont icon-jiamengweixuanzhong"></div>
 					<p class="weui_tabbar_label">球馆加盟</p>
 				</a>
 				<a href="javascript:;" class="weui_tabbar_item">
-					<div class="weui_tabbar_icon">
-						<img src="images/icon_nav_cell.png" alt="">
-					</div>
+					<div class="weui_tabbar_icon iconfont icon-jiamengweixuanzhong"></div>
 					<p class="weui_tabbar_label">乐众商城</p>
 				</a>
 				<a href="javascript:;" class="weui_tabbar_item">
-					<div class="weui_tabbar_icon">
-						<img src="images/icon_nav_button.png" alt="">
-					</div>
+					<div class="weui_tabbar_icon iconfont icon-jiamengweixuanzhong"></div>
 					<p class="weui_tabbar_label">个人设置</p>
 				</a>
 			</div>
@@ -225,7 +239,7 @@
 					defaultIndex: 0,
 					activeClass: 'weui_bar_item_on',
 					onToggle: function(index) {
-						if(index > 0) {
+						if(index >= 0) {
 							var tar = $(".weui_tabbar_label");
 							document.title = tar[index].innerHTML;
 						}
@@ -283,7 +297,7 @@
 				var page = 0;
 				// 每页展示6个
 				var size = 6;
-				$('.weui_panel').dropload({
+				$('.weui_panels').dropload({
 					scrollArea: window,
 					autoLoad: false, //自动加载
 					domDown: { //上拉
@@ -324,7 +338,7 @@
 										el: '.weui-updown [data-img]', //匹配元素
 										top: 50, //元素在顶部伸出长度触发加载机制
 										right: 50, //元素在右边伸出长度触发加载机制
-										bottom: 50, //元素在底部伸出长度触发加载机制
+										bottom: 5, //元素在底部伸出长度触发加载机制
 										left: 50, //元素在左边伸出长度触发加载机制
 										qriginal: false, // true，自动将图片剪切成默认图片的宽高；false显示图片真实宽高
 										load: function(el) {
