@@ -7,6 +7,52 @@
 		<link rel="stylesheet" href="css/weuix.min.css" />
 	</head>
 	<body>
-		欢迎登录
+		<h1 style="text-align:center">欢迎登录</h1>
+		<form id="form">
+			<div class="weui_cells weui_cells_form">
+				<!--手机号码-->
+				<div class="weui_cell">
+					<div class="weui_cell_hd"><label class="weui_label">手机号：</label></div>
+					<div class="weui_cell_bd weui_cell_primary">
+						<input class="weui_input" type="tel" required pattern="[0-9]{11}" maxlength="11" placeholder="输入你现在的手机号" emptyTips="请输入手机号" notMatchTips="请输入正确的11位数手机号码">
+					</div>
+					<div class="weui_cell_ft">
+						<i class="weui_icon_warn"></i>
+					</div>
+				</div>
+				<!--密码-->
+				<div class="weui_cell">
+					<div class="weui_cell_hd"><label class="weui_label">密&nbsp;&nbsp;&nbsp;&nbsp;码：</label></div>
+					<div class="weui_cell_bd weui_cell_primary">
+						<input class="weui_input" type="password" required pattern="^[a-zA-Z]\w{5,18}$" maxlength="18" placeholder="请输入您的登录密码" emptyTips="请输入登录密码" notMatchTips="请输入带有字母的6位数密码">
+					</div>
+					<div class="weui_cell_ft">
+						<i class="weui_icon_warn"></i>
+					</div>
+				</div>
+			</div>
+			<!--提交按钮-->
+			<div class="weui_btn_area">
+				<a id="formSubmitBtn" href="javascript:" class="weui_btn weui_btn_primary">登录</a>
+			</div>
+		</form>
+		<script src="js/zepto.min.js"></script>
+		<script>
+			var $form = $("#form");
+			$form.form();
+			$("#formSubmitBtn").on("click", function() {
+				$form.validate(function(error) {
+					if(error) {
+						//console.log('cuowu');
+					} else {
+						$.toptips('验证通过提交', 'ok');
+						setTimeout(function(){
+						window.location.href = 'index.html';
+						},1000);
+					}
+				});
+
+			});
+		</script>
 	</body>
 </html>
