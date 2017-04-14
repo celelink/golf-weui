@@ -1037,7 +1037,7 @@ input.weui_btn_plain_default {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
 	flex: 1;
-	padding: 5px 0 0;
+	padding: 0;
 	-webkit-tap-highlight-color: transparent
 }
 
