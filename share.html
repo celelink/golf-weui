@@ -10,12 +10,18 @@
 	</head>
 
 	<body>
-		 <div class="weui_cell">
-                <div class="weui_cell_bd weui_cell_primary">
-                    <p>标题文字</p>
-                </div>
-                <div class="weui_cell_ft"><input type="text" /></div>
-            </div>
+		<div class="page-bd">
+			<div class="weui-flex data-flex">
+				<div class="weui-flex-item">
+					<div class="places">
+					</div>
+				</div>
+				<div class="weui-flex-item">
+					<div class="places">
+					</div>
+				</div>
+			</div>
+		</div>
 		<script src="js/zepto.min.js"></script>
 		<script src="js/qrcode.js"></script>
 		<script>
@@ -28,12 +34,14 @@
 				$(document).on('tap', '.delete', function() {
 					$(this).parent().parent('.weui_cell').remove();
 				})
+
 			});
 		</script>
 		<script>
 			var txt = "BEGIN:VCARD\r\nVERSION:3.0\r\nN:太白\r\nFN:李\r\nTITLE:工程师\r\nNICKNAME:昵称\r\nTEL;CELL;VOICE:移动18291448888\r\nTEL;WORK;VOICE:工作电话18291449999\r\nORG:组织机构\r\nEMAIL;PREF;INTERNET:logove@qq.com\r\nADR;TYPE=WORK:;;具体地址;汉中;陕西省;2324200;中国\r\nADR;TYPE=HOME:;;具体地址;汉中;陕西省;2324200;中国\r\nNOTE;ENCODING=QUOTED-PRINTABLE:备注来自名片通讯录\r\nEND:VCARD";
 			$(function() {
 				$(".places").empty().qrcode({ render: "image", ecLevel: "L", size: 300, background: "#fff", fill: "#000", text: txt });
+
 			});
 		</script>
 	</body>
