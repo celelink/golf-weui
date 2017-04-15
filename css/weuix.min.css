@@ -4834,6 +4834,9 @@ a.img-border:hover {
 .weui_msg_src {
 	border-radius: 5px;
 	font-size: 0;
+	padding:10px;
+	background:#FFFFFF;
+	margin-bottom:2px;
 	overflow: hidden
 }
 
@@ -4865,7 +4868,7 @@ a.img-border:hover {
 	background: #fff none repeat scroll 0 0;
 	border-radius: 5px;
 	color: red;
-	padding: 0 0 10px
+	padding: 3px 0 5px
 }
 
 .weui_dialog,
