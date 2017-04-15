@@ -171,7 +171,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
 				<!--个人设置选项卡-->
@@ -287,15 +287,22 @@
 			$(function() {
 				//选项卡切换的控制操作
 				$('.weui_tab').tab({
-					defaultIndex: 0,
+					defaultIndex: sessionStorage.getItem("state"),
 					activeClass: 'weui_bar_item_on',
 					onToggle: function(index) {
 						if(index >= 0) {
 							var tar = $(".weui_tabbar_label");
-							tabber();
 							document.title = tar[index].innerHTML;
 						}
-						sessionStorage.setItem("stateold", index);
+						sessionStorage.setItem("state", index);
+						var a = $(".weui_tabbar a");
+						for(var i = 0; i < a.length; i++) {
+							if(a[i].className.indexOf('weui_bar_item_on') < 0) {
+								a[i].childNodes.item(1).className = a[i].childNodes.item(1).className.replace('icon-yi-', 'icon-wei-')
+							} else {
+								a[i].childNodes.item(1).className = a[i].childNodes.item(1).className.replace('icon-wei-', 'icon-yi-')
+							}
+						}
 					}
 				});
 				//搜索框的控制操作
@@ -325,8 +332,6 @@
 						me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
 					}
 				});
-				//页面返回回来固定样式，通过sessionStorage存储记录实现在切换之间保留页面的当前样式
-				tabbers();
 			});
 		</script>
 		<script>
@@ -468,35 +473,6 @@
 					showDistrict: false
 				});
 			});
-
-			function tabber() {
-				var a = $(".weui_tabbar a");
-				for(var i = 0; i < a.length; i++) {
-					if(a[i].className.indexOf('weui_bar_item_on') < 0) {
-						a[i].childNodes.item(1).className = a[i].childNodes.item(1).className.replace('icon-yi-', 'icon-wei-')
-					} else {
-						a[i].childNodes.item(1).className = a[i].childNodes.item(1).className.replace('icon-wei-', 'icon-yi-')
-					}
-				}
-			}
-
-			function tabbers() {
-				if(sessionStorage.getItem("statenew")) {
-					var index = sessionStorage.getItem("statenew");
-					var s = $('.weui_tabbar a');
-					var b = $('.weui_tab_bd_item');
-					for(var i = 0; i < s.length; i++) {
-						if(sessionStorage.getItem("stateold") != sessionStorage.getItem("statenew")) {
-							s[i].className = s[i].className.replace(/weui_bar_item_on/g, " ");
-							s[index].className = 'weui_tabbar_item weui_bar_item_on';
-							b[i].style.display = 'none';
-							b[index].style.display = 'block';
-							tabber();
-						}
-
-					}
-				}
-			}
 		</script>
 	</body>
 
