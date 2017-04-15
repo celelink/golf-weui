@@ -45,7 +45,7 @@
 					</div>
 					<div class="weui_panel weui_panel_access weui_panels">
 
-						<div class="weui_panel_bd">
+						<div class="weui_panel_bd weui_panel_bds">
 							<a href="cell4_.html" class="weui_media_box weui_media_appmsg">
 								<div class="weui_media_hd weui-updown"><img class="weui_media_appmsg_thumb lazyload" src="http://d8.yihaodianimg.com/N05/M03/D4/1E/CgQI0lYEBwWAQIvJAAFyostaOYY12501_80x80.jpg" alt="" style="animation: fadeIn 1s ease 0.2s 1 both;"></div>
 								<div class="weui_media_bd">
@@ -371,7 +371,7 @@
 								}
 								// 为了测试，延迟1秒加载
 								setTimeout(function() {
-									$('.weui_panel_bd').html(result);
+									$('.weui_panel_bds').html(result);
 									var lazyloadImg = new LazyloadImg({
 										el: '.weui-updown [data-img]', //匹配元素
 										top: 50, //元素在顶部伸出长度触发加载机制
@@ -434,7 +434,7 @@
 								}
 								// 为了测试，延迟1秒加载
 								setTimeout(function() {
-									$('.weui_panel_bd').append(result);
+									$('.weui_panel_bds').append(result);
 									var lazyloadImg = new LazyloadImg({
 										el: '.weui-updown [data-img]', //匹配元素
 										top: 50, //元素在顶部伸出长度触发加载机制
