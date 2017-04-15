@@ -14,7 +14,6 @@
 	text-align:center;
 	font-size: 26px;
 }
-
 /*球馆加盟样式*/
 .router-view {
     width: 100%;
@@ -167,6 +166,27 @@
 .plac img{
 	padding:10px;
 	width:10em;
-	border-radius: 10px;;
+	border-radius: 10px;
 	background:#FFFFFF;
+}
+
+/*商品购买关闭按钮*/
+.weui_cell_ft .colse{
+	position: absolute;
+	right:12px;
+	text-align:center;
+	top:10px;
+	width:25px;
+	height:25px;
+	border-radius: 50%;
+	background: #B0B0B0;
+	font-size: 20px;
+	color:#ffffff;
+	display: inline-block;
+}
+#affirm{
+	display:none;
+	position: fixed;
+	bottom: 0;
+	width:100%;
 }
