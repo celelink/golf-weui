@@ -7,12 +7,15 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
 		<link rel="stylesheet" href="css/weuix.min.css" />
 		<script src="js/zepto.min.js"></script>
+		<script src="js/qrcode.js"></script>
 		<script>
 			$(function() {
 				$('#ms4').click(function() {
 					$('#msg1,#msg3').fadeOut();
 					$('#msg2').fadeOut();
 					$('#msg4').fadeIn();
+					var txt = "BEGIN:VCARD\r\nVERSION:3.0\r\nN:太白\r\nFN:李\r\nTITLE:工程师\r\nNICKNAME:昵称\r\nTEL;CELL;VOICE:移动18291448888\r\nTEL;WORK;VOICE:工作电话18291449999\r\nORG:组织机构\r\nEMAIL;PREF;INTERNET:logove@qq.com\r\nADR;TYPE=WORK:;;具体地址;汉中;陕西省;2324200;中国\r\nADR;TYPE=HOME:;;具体地址;汉中;陕西省;2324200;中国\r\nNOTE;ENCODING=QUOTED-PRINTABLE:备注来自名片通讯录\r\nEND:VCARD";
+					$(".weui_msg_src").empty().qrcode({ render: "image", ecLevel: "L", size: 300, background: "#fff", fill: "#000", text: txt });
 				})
 			});
 		</script>
