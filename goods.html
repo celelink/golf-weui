@@ -23,9 +23,42 @@
 				<p>总价：<span style="color:red">19800</span></p>
 			</div>
 			<div class="pur_right">
-				<button>立即购买</button>
+				<button id="act">立即购买</button>
 			</div>
 		</div>
+		<script src="js/zepto.min.js"></script>
+		<script>
+			$(document).on("click", "#act", function() {
+				$.actions({
+					title: "付款确认",
+					onClose: function() {
+						console.log("close");
+					},
+					actions: [{
+							text: "发布",
+							className: "color-primary",
+							onClick: function() {
+								$.alert("发布成功");
+							}
+						},
+						{
+							text: "编辑",
+							className: "color-warning",
+							onClick: function() {
+								$.alert("你选择了“编辑”");
+							}
+						},
+						{
+							text: "删除",
+							className: 'color-danger',
+							onClick: function() {
+								$.alert("你选择了“删除”");
+							}
+						}
+					]
+				});
+			});
+		</script>
 	</body>
 
 </html>
