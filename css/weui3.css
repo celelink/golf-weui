@@ -1,3 +1,20 @@
+/*控制全局的图标颜色*/
+/*未选中的颜色*/
+[class*="icon-wei-"]{
+	color:#b0b0b0;
+}
+/*已选中的颜色*/
+[class*="icon-yi-"]{
+	color:#44ba56;
+}
+/*主导航栏的样式*/
+.iconfont {
+	height:30px;
+	width:30PX;
+	text-align:center;
+	font-size: 26px;
+}
+
 /*球馆加盟样式*/
 .router-view {
     width: 100%;
@@ -41,22 +58,30 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-
-.icon-80{
+/*球馆头部的处理*/
+.right-P{
 	position:absolute;
-	top:.5em;
 	right:.5em;
-	font-size: 1.4em;
-	line-height: 22px;
+	width:9em;
+	padding:0;
 }
-.right{
-	position:absolute;
-	right:.5em;
+.right .weui_cell_hd .weui_label{
+	width:3em;
+}
+.fi{
+	height: 2.4em;
+	line-height: 3em;
+	font-size: small;
+}
+.weui_cell:before{
+	border:0;
 }
 .aux{
 	font-size: smaller;
 	color:#979797;
 }
+
+/*商品详情样式*/
 .weui_panel [class^="icon"]{
 	font-size: 1.6em;
 }
@@ -88,12 +113,36 @@
 	background:#F43530;
 	width:10em;
 }
-.iconfont {
-	height:30px;
-	width:30px;
-	font-size: 26px;
-}
 .weui_tabbar_item p{
 	font-size: 13px;
 }
 
+/*个人中心消息图标定位*/
+.icon-wei-xiaoxi{
+	position:absolute;
+	top:.5em;
+	right:.5em;
+	font-size: 1.4em;
+	line-height: 22px;
+}
+.right{
+	position:absolute;
+	right:15px;
+}
+.weui_cell_hd [class*="icon-wei-"]{
+	margin-right: 10PX;
+}
+.weui_tab_bd_item .page-bd{
+	padding:5px;
+}
+.places {
+	margin:2px 4px;
+}
+.places img{
+	width:100%;
+	height:100%;
+}
+.page-bd .data-flex{
+ 	margin:4px 0;
+ 	padding:0;
+ }
