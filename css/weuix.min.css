@@ -971,8 +971,8 @@ input.weui_btn_plain_default {
 }
 
 .weui_article {
-	padding: 20px 15px;
-	font-size: 15px
+    padding: 1.25rem 1.875rem;
+    font-size: 1.75rem;
 }
 
 .weui_article section {
@@ -3727,8 +3727,8 @@ input.bg-orange-b {
 	height: 8px;
 	background-color: #f74c31;
 	border-radius: 5px;
-	right: -3px;
-	top: -3px;
+	right: 0;
+	top: 0;
 	background-clip: padding-box
 }
 
