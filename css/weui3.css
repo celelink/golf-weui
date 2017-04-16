@@ -156,11 +156,11 @@
 	height:2em;
 }
 .icon-83{
-	float: right;
+	position: absolute;
 	width:30px;
 	height:30px;
 	border: transparent;
-	margin:0 55px 0 -50px;
+	margin-left:10px;
 }
 .addr{
 	background:#a2a0a0;
