@@ -166,6 +166,9 @@
 	margin-left:10px;
 	background:#B2B2B2;
 	border:none;
+	box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
 }
 .addr{
 	background:#a2a0a0;
