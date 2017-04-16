@@ -161,10 +161,12 @@
 	height:30px;
 	border: transparent;
 	margin-left:10px;
+	border-radius: 5px;
 }
 .addr{
 	background:#a2a0a0;
-	padding:0 5px;
+	padding:0 6px;
+	border-radius: 5px;
 }
 .plac img{
 	padding:10px;
