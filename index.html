@@ -285,6 +285,9 @@
 		<script src="js/picker-city.js"></script>
 		<script>
 			$(function() {
+				if(sessionStorage.getItem("state")==null){
+					sessionStorage.setItem("state",0)
+				};
 				//选项卡切换的控制操作
 				$('.weui_tab').tab({
 					defaultIndex: sessionStorage.getItem("state"),
