@@ -285,7 +285,7 @@
 		<script src="js/picker-city.js"></script>
 		<script>
 			$(function() {
-				if(sessionStorage.getItem("state")==null){
+				if(!(sessionStorage.getItem("state"))){
 					sessionStorage.setItem("state",0)
 				};
 				//选项卡切换的控制操作
