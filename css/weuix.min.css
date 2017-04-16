@@ -980,9 +980,9 @@ input.weui_btn_plain_default {
 }
 
 .weui_article h1 {
-	font-size: 17px;
-	font-weight: 400;
-	margin-bottom: .75em
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom:1.25rem;
 }
 
 .weui_article h2 {
@@ -1003,9 +1003,11 @@ input.weui_btn_plain_default {
 }
 
 .weui_article p {
-	margin: 10px 0
+	margin:0;
 }
-
+.weui_article p img{
+	margin:1.25rem 0 2.125rem;
+}
 .weui_tabbar {
 	display: -webkit-box;
 	display: -webkit-flex;
