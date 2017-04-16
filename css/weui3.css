@@ -155,13 +155,21 @@
 	line-height: 2em;
 	height:2em;
 }
-.icon-dian{
+.icon-83{
 	font-size: 15px;
-	background:#b0b0b0;
-	margin-left:5px;
+	font-weight: bold;
+	width:30px;
+	height: 30px;
+	display: inline-block;
+	text-align: center;
+	line-height: 30px;
+	margin-left:10px;
+	background:#B2B2B2;
+	border:none;
 }
 .addr{
 	background:#a2a0a0;
+	padding:0 5px;
 }
 .plac img{
 	padding:10px;
