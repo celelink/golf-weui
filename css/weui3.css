@@ -25,7 +25,7 @@
 }
 /*图片的样式处理*/
 .m-img {
-    padding-bottom: 43%;
+    padding-bottom: 45%;
     display: block;
     position: relative;
     max-width: 100%;
@@ -120,6 +120,9 @@
 .weui_tabbar_item p{
 	font-size: 13px;
 }
+.news{
+	margin-bottom: 10px;
+}
 .news .vux-masker{
 	position: relative;
 }
@@ -132,6 +135,9 @@
 	font-weight: 300;
 	text-shadow: 0 0 0 rgba(0, 0, 0, 1);
 	text-align: left;
+}
+.vux-masker-box {
+	 box-shadow:0 5px 0px 4px gainsboro;
 }
 .news .right{
 	font-size: 14px;
