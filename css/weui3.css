@@ -75,7 +75,7 @@
 	border:0;
 }
 .aux{
-	font-size: smaller;
+	font-size: 15px;
 	color:#979797;
 }
 
@@ -144,6 +144,24 @@
  	margin:0;
  	padding:0;
  }
+ .golfname{
+ 	font-weight: 500;
+ 	font-size:21px;
+ }
+ .name_mar{
+ 	padding:10px 4%;
+ }
+.per .weui_cells:after,.per
+.weui_cells:before {
+	content: " ";
+	position: absolute;
+	left: 53px;
+	width: 100%;
+	height: 1px;
+	color: #f4f4f4;
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5)
+}
  /*新手帮助向左的聊天气泡的样式*/
 /*左右气泡的公共样式*/
 .mess_left,.mess_right{
