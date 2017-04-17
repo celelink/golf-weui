@@ -17,13 +17,15 @@
 /*球馆加盟样式*/
 .router-view {
     width: 100%;
+    background: #ebecee;
 }
 .vux-masker-box {
     position: relative;
+    background: #ffffff;
 }
 /*图片的样式处理*/
 .m-img {
-    padding-bottom: 33%;
+    padding-bottom: 43%;
     display: block;
     position: relative;
     max-width: 100%;
@@ -48,6 +50,7 @@
     font-weight: 500;
     font-size: 16px;
     position: absolute;
+    padding-bottom:10px;
     left: 0;
     right: 0;
     width: 100%;
@@ -117,7 +120,22 @@
 .weui_tabbar_item p{
 	font-size: 13px;
 }
-
+.news .vux-masker{
+	position: relative;
+}
+.news .m-title{
+	position: relative;
+	top:30px;
+	margin-top: 10px;
+	padding-left: 10px;
+	color: #000000;
+	font-weight: 300;
+	text-shadow: 0 0 0 rgba(0, 0, 0, 1);
+	text-align: left;
+}
+.news .right{
+	font-size: 14px;
+}
 /*个人中心消息图标定位*/
 .icon-wei-xiaoxi{
 	position:absolute;
@@ -146,7 +164,7 @@
  }
  .golfname{
  	font-weight: 500;
- 	font-size:21px;
+ 	font-size:20px;
  }
  .name_mar{
  	padding:10px 4%;
@@ -161,6 +179,9 @@
 	color: #f4f4f4;
 	-webkit-transform: scaleY(.5);
 	transform: scaleY(.5)
+}
+.per .weui_cell{
+	padding:5px 15px;
 }
  /*新手帮助向左的聊天气泡的样式*/
 /*左右气泡的公共样式*/

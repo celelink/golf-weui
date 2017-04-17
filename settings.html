@@ -6,46 +6,48 @@
 		<title>设置中心</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
 		<link rel="stylesheet" href="css/weuix.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/weui3.css"/>
-		<link rel="stylesheet" href="https://at.alicdn.com/t/font_4m5d6gb1o3onipb9.css" />
+		<link rel="stylesheet" type="text/css" href="css/weui3.css" />
+		<link rel="stylesheet" href="https://at.alicdn.com/t/font_zhcqmlf4p6lp7gb9.css" />
 	</head>
 
 	<body>
 
 		<div class="weui_panel">
-			<div class="weui_panel_bd">
-				<div class="weui_media_box weui_media_small_appmsg">
-					<div class="weui_cells weui_cells_access">
-						<a class="weui_cell" href="mobile.html">
-							<div class="weui_cell_hd"><span class="iconfont icon-wei-shouji"></span></div>
-							<div class="weui_cell_bd weui_cell_primary">
-								<p>手机号码设置</p>
-							</div>
-							<span class="weui_cell_ft"></span>
-						</a>
-						<a class="weui_cell" href="address.html">
-							<div class="weui_cell_hd"><span class="iconfont icon-wei-shouhuodizhi"></span></div>
-							<div class="weui_cell_bd weui_cell_primary">
-								<p>收货地址管理</p>
-							</div>
-							<span class="weui_cell_ft"></span>
-						</a>
-						<a class="weui_cell" href="password.html">
-							<div class="weui_cell_hd"><span class="iconfont icon-wei-mima"></span></div>
-							<div class="weui_cell_bd weui_cell_primary">
-								<p>修改登录密码</p>
-							</div>
-							<span class="weui_cell_ft"></span>
-						</a>
-						<a class="weui_cell" id="sd3">
-							<div class="weui_cell_hd"><span class="iconfont icon-wei-nicheng"></span></div>
-							<div class="weui_cell_bd weui_cell_primary">
-								<p>修改用户昵称</p>
-							</div>
-							<span class="weui_cell_ft"></span>
-						</a>
+			<div class="weui_cells weui_cells_access">
+				<a class="weui_cell" href="mobile.html">
+					<div class="weui_cell_hd"><span class="iconfont icon-wei-shouji"></span></div>
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>手机号码设置</p>
 					</div>
-				</div>
+					<span class="weui_cell_ft"></span>
+				</a>
+			</div>
+			<div class="weui_cells weui_cells_access">
+				<a class="weui_cell" href="address.html">
+					<div class="weui_cell_hd"><span class="iconfont icon-wei-shouhuodizhi"></span></div>
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>收货地址管理</p>
+					</div>
+					<span class="weui_cell_ft"></span>
+				</a>
+			</div>
+			<div class="weui_cells weui_cells_access">
+				<a class="weui_cell" href="password.html">
+					<div class="weui_cell_hd"><span class="iconfont icon-wei-mima"></span></div>
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>修改登录密码</p>
+					</div>
+					<span class="weui_cell_ft"></span>
+				</a>
+			</div>
+			<div class="weui_cells weui_cells_access">
+				<a class="weui_cell" id="sd3">
+					<div class="weui_cell_hd"><span class="iconfont icon-wei-nicheng"></span></div>
+					<div class="weui_cell_bd weui_cell_primary">
+						<p>修改用户昵称</p>
+					</div>
+					<span class="weui_cell_ft"></span>
+				</a>
 			</div>
 		</div>
 	</body>
@@ -53,14 +55,14 @@
 	<script>
 		//修改登录密码和用户昵称方法封装
 		function modi(val) {
-			$.prompt("请输入您的"+val, val+"修改", function(text) {
-				$.alert("您的"+val+"已修改为:" + text, "温馨提示");
+			$.prompt("请输入您的" + val, val + "修改", function(text) {
+				$.alert("您的" + val + "已修改为:" + text, "温馨提示");
 			}, function() {
 				//取消操作
 			});
 		};
-		$(document).on("click", "#sd3", function(){
-			var a=$(this)[0].innerText.slice(2,6);
+		$("#sd3").click(function() {
+			var a = $(this)[0].innerText.slice(2, 6);
 			modi(a);
 		});
 	</script>
