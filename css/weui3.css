@@ -23,6 +23,12 @@
     position: relative;
     background: #ffffff;
 }
+.weui_label1 {
+    display: block;
+    width: 2.7em;
+    word-wrap: break-word;
+    word-break: break-all;
+}
 /*图片的样式处理*/
 .m-img {
     padding-bottom: 45%;
