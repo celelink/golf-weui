@@ -219,7 +219,7 @@ input.weui_btn_mini {
 }
 
 .weui_btn+.weui_btn {
-	margin-top: 15px
+	margin-top: 8px
 }
 
 .weui_btn.weui_btn_inline+.weui_btn.weui_btn_inline {
@@ -1507,7 +1507,7 @@ a.weui_media_box:active {
 	transform: translate(-50%, -50%);
 	background-color: #fafafc;
 	text-align: center;
-	border-radius: 3px;
+	border-radius: 5px;
 	overflow: hidden
 }
 
@@ -3491,7 +3491,7 @@ input.bg-orange-b {
 
 .slide {
 	position: relative;
-	max-width: 640px;
+	max-width: 100%;
 	overflow: hidden;
 	margin: 0 auto
 }
@@ -4959,6 +4959,7 @@ a.img-border:hover {
 	padding: 4px 6px;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
+	border-radius: 4px;
 	height: 2em;
 	width: 80%;
 	margin-top: 10px

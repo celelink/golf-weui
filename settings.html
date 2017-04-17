@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
 		<link rel="stylesheet" href="css/weuix.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/weui3.css"/>
-		<link rel="stylesheet" href="https://at.alicdn.com/t/font_9hocbvmqa43rf6r.css" />
+		<link rel="stylesheet" href="https://at.alicdn.com/t/font_4m5d6gb1o3onipb9.css" />
 	</head>
 
 	<body>
@@ -30,7 +30,7 @@
 							</div>
 							<span class="weui_cell_ft"></span>
 						</a>
-						<a class="weui_cell" id="sd2">
+						<a class="weui_cell" href="password.html">
 							<div class="weui_cell_hd"><span class="iconfont icon-wei-mima"></span></div>
 							<div class="weui_cell_bd weui_cell_primary">
 								<p>修改登录密码</p>
@@ -38,7 +38,7 @@
 							<span class="weui_cell_ft"></span>
 						</a>
 						<a class="weui_cell" id="sd3">
-							<div class="weui_cell_hd"><span class="iconfont icon-wei-name"></span></div>
+							<div class="weui_cell_hd"><span class="iconfont icon-wei-nicheng"></span></div>
 							<div class="weui_cell_bd weui_cell_primary">
 								<p>修改用户昵称</p>
 							</div>
@@ -59,7 +59,7 @@
 				//取消操作
 			});
 		};
-		$(document).on("click", "#sd2,#sd3", function(){
+		$(document).on("click", "#sd3", function(){
 			var a=$(this)[0].innerText.slice(2,6);
 			modi(a);
 		});
