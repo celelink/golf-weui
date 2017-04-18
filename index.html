@@ -15,7 +15,7 @@
 			<!--首页选项卡-->
 			<div class="weui_tab_bd">
 				<div class="weui_tab_bd_item">
-					<div class="slide" id="slide1">
+					<div class="slide " id="slide1">
 						<ul>
 							<li>
 								<a href="#">
@@ -42,11 +42,11 @@
 							<span></span>
 						</div>
 					</div>
-					<div class="router-view news">
 						<div class="weui_cells" style="padding:10px">
 							<p class="left">新闻动态</p>
 							<a href="details_list.html" class="right">更多<span class="iconfont icon-iconfontjiantouyou"></span></a>
 						</div>
+					<div class="router-view news">
 						<div class="weui_panels">
 
 							<div style="padding:10px 10px 0 10px" class="adw">
@@ -56,7 +56,7 @@
 										<div class="vux-masker">
 											<div class="m-title">
 												洗颜新潮流！人气洁面皂排行榜
-												<br> <span class="m-time iconfont icon-iconfontshijian">2016-03-18</span></div>
+												<br> <span class="m-time iconfont icon-iconfontshijian  f-gray"></span><span class="f12 f-gray" style="margin-left:5px">2016-03-18</span></div>
 										</div>
 									</div>
 								</a>
@@ -68,7 +68,7 @@
 										<div class="vux-masker">
 											<div class="m-title">
 												美容用品 &amp; 日用品（上）
-												<br> <span class="m-time iconfont icon-iconfontshijian">2016-03-18</span></div>
+												<br> <span class="m-time iconfont icon-iconfontshijian  f-gray"></span><span class="f14 f-gray" style="margin-left:5px">2016-03-18</span></div>
 										</div>
 									</div>
 								</a>
@@ -425,9 +425,9 @@
 				var page = 0;
 				// 每页展示6个
 				var size = 6;
-				$('.weui_panels').dropload({
+				$('.news').dropload({
 					scrollArea: window,
-					autoLoad: false, //自动加载
+					autoLoad: true, //自动加载
 					domDown: { //上拉
 						domClass: 'dropload-down',
 						domRefresh: '<div class="dropload-refresh f15 "><i class="iconfont icon-jiantouxiangshang" style="font-size:1.1em"></i>上拉加载更多</div>',
@@ -464,9 +464,9 @@
 									$('.weui_panels').html(result);
 									var lazyloadImg = new LazyloadImg({
 										el: '.weui-updown [data-img]', //匹配元素
-										top: 50, //元素在顶部伸出长度触发加载机制
+										top: 10, //元素在顶部伸出长度触发加载机制
 										right: 50, //元素在右边伸出长度触发加载机制
-										bottom: 50, //元素在底部伸出长度触发加载机制
+										bottom: 10, //元素在底部伸出长度触发加载机制
 										left: 50, //元素在左边伸出长度触发加载机制
 										qriginal: false, // true，自动将图片剪切成默认图片的宽高；false显示图片真实宽高
 										load: function(el) {
@@ -527,9 +527,9 @@
 									$('.weui_panels').append(result);
 									var lazyloadImg = new LazyloadImg({
 										el: '.weui-updown [data-img]', //匹配元素
-										top: 50, //元素在顶部伸出长度触发加载机制
+										top: 10, //元素在顶部伸出长度触发加载机制
 										right: 50, //元素在右边伸出长度触发加载机制
-										bottom: 50, //元素在底部伸出长度触发加载机制
+										bottom: 10, //元素在底部伸出长度触发加载机制
 										left: 50, //元素在左边伸出长度触发加载机制
 										qriginal: false, // true，自动将图片剪切成默认图片的宽高；false显示图片真实宽高
 										load: function(el) {
