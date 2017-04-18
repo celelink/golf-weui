@@ -1,5 +1,5 @@
 /*控制全局的图标颜色*/
-
+* { touch-action: none; }
 
 /*未选中的颜色*/
 
@@ -184,19 +184,6 @@
 	font-size: 13px;
 }
 
-.news .vux-masker {
-	position: relative;
-}
-
-.news .m-title {
-	position: relative;
-	top: 30px;
-	margin-top: 10px;
-	padding-left: 10px;
-	color: #000000;
-	font-weight: 100;
-	text-align: left;
-}
 
 .m-title {
 	color: #fff;
@@ -211,18 +198,6 @@
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
-}
-
-.vux-masker-box {
-	box-shadow:0px 0px 3px 3px gainsboro;
-}
-
-.news .right {
-	font-size: 14px;
-}
-.news .iconfont{
-	font-size: 15px;
-	color:#454545;
 }
 
 /*个人中心消息图标定位*/
@@ -489,4 +464,28 @@
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+}
+
+.new_list .weui_media_box.weui_media_appmsg {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.new_list a.weui_media_box {
+    color: #000;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.new_list .weui_media_box {
+    padding: 15px;
+    position: relative;
+}
+.new_list .weui_media_box.weui_media_appmsg .weui_media_hd {
+    margin-right:0;
+    width: 100%;
+   	height:100%;
+    line-height: 10%;
+    text-align: center;
 }
