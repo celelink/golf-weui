@@ -90,7 +90,13 @@
 
 /*商品详情样式*/
 .shop{
-	padding:16px 4%;
+	padding:2.135% 4%;
+}
+.shop .weui-flex-item{
+	margin:1.0675%
+}
+.describe{
+	padding:6.09% 5px;
 }
 .weui_panel [class^="icon"]{
 	font-size: 1.6em;
@@ -126,9 +132,7 @@
 .weui_tabbar_item p{
 	font-size: 13px;
 }
-.news{
-	margin-bottom: 10px;
-}
+
 .news .vux-masker{
 	position: relative;
 }
@@ -163,16 +167,15 @@
 .weui_cell_hd [class*="icon-wei-"]{
 	margin-right: 10PX;
 }
-.places {
-	margin:2px 4px;
-}
+
 .places img{
 	width:100%;
 	height:100%;
 }
 .page-bd .data-flex{
- 	margin:0;
+ 	margin-top:10px;
  	padding:0;
+ 	height:100%;
  }
  .golfname{
  	font-weight: 500;

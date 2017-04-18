@@ -6128,7 +6128,8 @@ a.img-border:hover {
 
 .page-bd .weui-flex-item {
 	-webkit-flex: 1 1 0;
-	flex: 1 1 0
+	flex: 1 1 0;
+	height: 100%;
 }
 
 .weui_cell-bd {
