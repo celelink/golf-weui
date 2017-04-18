@@ -91,12 +91,17 @@
 /*商品详情样式*/
 .shop{
 	padding:/*2.135%*/0 4%;
+	background:#ebecee;;
 }
 .shop .weui-flex-item{
 	margin:1.0675%
 }
+.shop .img-radius{
+	border-radius: 3px 3px 0 0;
+}
 .describe{
-	padding:6.09% 5px;
+	padding:5% 5px;
+	background: #FFFFFF;
 }
 .weui_panel [class^="icon"]{
 	font-size: 1.6em;
