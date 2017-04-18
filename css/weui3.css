@@ -1,152 +1,212 @@
 /*控制全局的图标颜色*/
+
+
 /*未选中的颜色*/
-[class*="icon-wei-"]{
-	color:#b0b0b0;
+
+[class*="icon-wei-"] {
+	color: #b0b0b0;
 }
+
+
 /*已选中的颜色*/
-[class*="icon-yi-"]{
-	color:#44ba56;
+
+[class*="icon-yi-"] {
+	color: #44ba56;
 }
+
+
 /*主导航栏的样式*/
+
 .weui_tabbar .iconfont {
-	height:30px;
-	width:30PX;
-	text-align:center;
+	height: 30px;
+	width: 30PX;
+	text-align: center;
 	font-size: 26px;
 }
+
+
 /*球馆加盟样式*/
+
 .router-view {
-    width: 100%;
-    background: #ebecee;
+	width: 100%;
+	background: #ebecee;
 }
+
 .vux-masker-box {
-    position: relative;
-    background: #ffffff;
+	position: relative;
+	background: #ffffff;
 }
+
 .weui_label1 {
-    display: block;
-    width: 2.7em;
-    word-wrap: break-word;
-    word-break: break-all;
+	display: block;
+	width: 2.7em;
+	word-wrap: break-word;
+	word-break: break-all;
 }
+
+
 /*图片的样式处理*/
+
 .m-img {
-    padding-bottom: 45%;
-    display: block;
-    position: relative;
-    max-width: 100%;
-    background-size: cover;
-    background-position: center center;
-    cursor: pointer;
-    border-radius: 2px;
+	padding-bottom: 45%;
+	display: block;
+	position: relative;
+	max-width: 100%;
+	background-size: cover;
+	background-position: center center;
+	cursor: pointer;
+	border-radius: 2px;
 }
+
+
 /*球馆加盟标题的样式*/
+
 .vux-masker {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    border-radius: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	border-radius: inherit;
 }
+
+
 /*文字的定位以及样式*/
+
 .m-title {
-    color: #fff;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-    font-weight: 500;
-    font-size: 16px;
-    position: absolute;
-    padding-bottom:10px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+	color: #fff;
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	font-weight: 500;
+	font-size: 16px;
+	position: absolute;
+	padding-bottom: 10px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
+
+
 /*球馆头部的处理*/
-.right-P{
-	position:absolute;
-	right:.5em;
-	width:9em;
-	padding:0;
+
+.right-P {
+	position: absolute;
+	right: .5em;
+	width: 9em;
+	padding: 0;
 }
-.right .weui_cell_hd .weui_label{
-	width:3em;
+
+.right .weui_cell_hd .weui_label {
+	width: 3em;
 }
-.fi{
+
+.fi {
 	height: 2.4em;
 	line-height: 3em;
 	font-size: small;
 }
-.weui_cell:before{
-	border:0;
-}
-.aux{
-	font-size: 15px;
-	color:#979797;
+
+.weui_cell:before {
+	border: 0;
 }
 
-/*商品详情样式*/
-.shop{
-	padding:/*2.135%*/0 2.378%;
-	background:#ebecee;;
+.aux {
+	font-size: 15px;
+	color: #979797;
 }
-.shop a{
-	width:100%;
+/*商品样式*/
+.shop {
+	padding: /*2.135%*/
+	0 2.378%;
+	background: #ebecee;
+	;
 }
-.shop .weui-flex-item{
-	margin:2.378%
+.shop a {
+	width: 100%;
+	color: #000000;
 }
-.shop .img-radius{
+.shop .weui-flex-item {
+	margin: 2.378%
+}
+
+.shop .img-radius {
 	border-radius: 3px 3px 0 0;
 }
-.describe{
-	padding:4% 5px;
+.places img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*商品详情样式*/
+.com_title{
+	padding:2% 4%;
+	background: #353535;
+	color: #FFFFFF;
+}
+.commodity .weui_cells:before{
+	border: none;
+}
+.commodity .slide .dot {
+	right: 50%;
+}
+
+.describe {
+	padding: 4% 5px;
 	background: #FFFFFF;
 }
-.weui_panel [class^="icon"]{
+
+.weui_panel [class^="icon"] {
 	font-size: 1.6em;
 }
-.weui_panel_access  section{
-	padding:10px;
+
+.weui_panel_access section {
+	padding: 10px;
 }
-.pur{
-	width:100%;
-	height:3em;
-	background:#ffffff;
-	line-height:3em;
-	position:fixed;
-	bottom:0;
+
+.pur {
+	width: 100%;
+	height: 3em;
+	background: #ffffff;
+	line-height: 3em;
+	position: fixed;
+	bottom: 0;
 }
-.pur_left{
+
+.pur_left {
 	float: left;
 	padding-left: 10px;
 	font-size: 20px;
 }
-.pur_right{
-	float:right;
+
+.pur_right {
+	float: right;
 }
-.pur_right button{
-	display:inline-block;
-	border:0;
-	height:50px;
-	color:#ffffff;
+
+.pur_right button {
+	display: inline-block;
+	border: 0;
+	height: 50px;
+	color: #ffffff;
 	font-size: 22px;
-	background:#F43530;
-	width:9em;
+	background: #F43530;
+	width: 9em;
 }
-.weui_tabbar_item p{
+
+.weui_tabbar_item p {
 	font-size: 13px;
 }
 
-.news .vux-masker{
+.news .vux-masker {
 	position: relative;
 }
-.news .m-title{
+
+.news .m-title {
 	position: relative;
-	top:30px;
+	top: 30px;
 	margin-top: 10px;
 	padding-left: 10px;
 	color: #000000;
@@ -154,45 +214,53 @@
 	text-shadow: 0 0 0 rgba(0, 0, 0, 1);
 	text-align: left;
 }
+
 .vux-masker-box {
-	 box-shadow:0 5px 0px 4px gainsboro;
+	box-shadow:0px 0px 3px 3px gainsboro;
 }
-.news .right{
+
+.news .right {
 	font-size: 14px;
 }
+.news .iconfont{
+	font-size: 15px;
+}
+
 /*个人中心消息图标定位*/
-.icon-wei-xiaoxi{
-	position:absolute;
-	top:.5em;
-	right:.5em;
+
+.icon-wei-xiaoxi {
+	position: absolute;
+	top: .5em;
+	right: .5em;
 	font-size: 1.4em;
 	line-height: 22px;
 }
-.rights{
-	position:absolute;
-	right:15px;
+
+.rights {
+	position: absolute;
+	right: 15px;
 }
-.weui_cell_hd [class*="icon-wei-"]{
+
+.weui_cell_hd [class*="icon-wei-"] {
 	margin-right: 10PX;
 }
 
-.places img{
-	width:100%;
-	height:100%;
+.page-bd .data-flex {
+	padding: 0;
+	height: 100%;
 }
-.page-bd .data-flex{
- 	padding:0;
- 	height:100%;
- }
- .golfname{
- 	font-weight: 500;
- 	font-size:20px;
- }
- .name_mar{
- 	padding:10px 4%;
- }
-.per .weui_cells:after,.per
-.weui_cells:before {
+
+.golfname {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.name_mar {
+	padding: 10px 4%;
+}
+
+.per .weui_cells:after,
+.per .weui_cells:before {
 	content: " ";
 	position: absolute;
 	left: 53px;
@@ -202,111 +270,224 @@
 	-webkit-transform: scaleY(.5);
 	transform: scaleY(.5)
 }
-.per .weui_cell{
-	padding:5px 15px;
-}
- /*新手帮助向左的聊天气泡的样式*/
-/*左右气泡的公共样式*/
-.mess_left,.mess_right{
- 	position:relative;
- 	overflow: hidden;
-}
-.mess_left .mess,.mess_right .mess{
- 	margin-top: 10px;
- 	border:1px solid #d6d4d4;
- 	background: #FFFFFF;
- 	border-radius: 5px;
- 	display: inline-block;
- 	box-sizing: border-box;
- 	padding: 5px 10px;
- 	min-height:40px;
- 	max-width:80%;
- 	overflow-wrap: break-word;
- 	word-wrap: break-word;
- 	line-height: 30px;
- }
-.mess_left .tria,.mess_right .tria{
- 	display: inline-block;
- 	position:absolute;
- 	z-index: 999;
- 	top:20px;
- 	width:0;
- 	height:0;
- 	border: 10px solid #FFFFFF;
- 	border-top-color: transparent;
- 	border-bottom-color: transparent;
- }
- /*向左的气泡样式*/
-.mess_left .mess{
- 	margin-left:20px;
- }
-  /*向右的气泡样式*/
-.mess_right .mess{
- 	float: right;
- 	margin-right:20px;
- }
-  /*向左的箭头样式*/
-.mess_left .tria{
- 	border-left-color: transparent;
- 	left:1px;
- }
-  /*向右的箭头样式*/
-.mess_right .tria{
- 	right:1px;
- 	border-right-color: transparent;
- }
-.tel{
-	text-align:center;
-	margin-top:10px;
-	padding:.6em 0;
-}
-/*二维码样式*/
-.qy{
-	font-size: 15px;
-	padding:10px;
-}
-.lin span{
-	display:inline-block;
-	line-height: 2em;
-	height:2em;
-}
-.icon-83{
-	position: relative;
-	width:30px;
-	height:30px;
-	border: transparent;
-	margin-left:10px;
-	border-radius: 5px;
-}
-.addr{
-	background:#a2a0a0;
-	padding:0 6px;
-	border-radius: 5px;
-}
-.plac img{
-	padding:10px;
-	width:65%;
-	border-radius: 10px;
-	background:#FFFFFF;
+
+.per .weui_cell {
+	padding: 5px 15px;
 }
 
-/*商品购买关闭按钮*/
-.weui_cell_ft .colse{
+
+/*个人中心我的钱包*/
+.account{
+	position: relative;
+	background: rgba(160, 160, 160, 0.5);
+}
+.integral {
+	height: 100%;
+	width: 100%;
+	padding: 10% 0;
+	text-align: center;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	/* Internet Explorer */
+	-moz-transform: rotate(45deg);
+	/* Firefox */
+	-webkit-transform: rotate(45deg);
+	/* Safari 和 Chrome */
+	-o-transform: rotate(45deg);
+	/* Opera */
+	transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	/* Internet Explorer */
+	-moz-transform-origin:50% 50%;
+	/* Firefox */
+	-webkit-transform-origin: 50% 50%;
+	/* Safari 和 Chrome */
+	-o-transform-origin: 50% 50%;
+	/* Opera */
+}
+.bord_outer{
+	display: inline-block;
+	overflow: hidden;
+	padding:2px;
+	background: transparent;
+	border-radius: 15px;
+	border: 1px solid #FF7F0D;
+}
+.bord{
+	background: #FF7F0D;
+	width: 100px;
+	height: 100px;
+	line-height: 19px;
+	padding: 10px 0;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 15px;
+	margin: 0 auto;
+}
+.bord p{
+	color:#FFFFFF;
+	-webkit-transform: rotate(-45deg);
+	transform-origin: 62% 59%;
+	-ms-transform-origin: 62% 59%;
+	-moz-transform-origin: 62% 59%;
+	-webkit-transform-origin: 62% 59%;
+	-o-transform-origin: 62% 59%;
+}
+.bord p .weui-loadmore-tips{
+	border-top: 1px dashed #FFFFFF;
+	padding-top:3px;
+	width: 100%;
+}
+/*新手帮助向左的聊天气泡的样式*/
+
+
+/*左右气泡的公共样式*/
+
+.mess_left,
+.mess_right {
+	position: relative;
+	overflow: hidden;
+}
+
+.mess_left .mess,
+.mess_right .mess {
+	margin-top: 10px;
+	border: 1px solid #d6d4d4;
+	background: #FFFFFF;
+	border-radius: 5px;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	min-height: 40px;
+	max-width: 80%;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	line-height: 30px;
+}
+
+.mess_left .tria,
+.mess_right .tria {
+	display: inline-block;
 	position: absolute;
-	right:12px;
-	text-align:center;
-	top:10px;
-	width:25px;
-	height:25px;
+	z-index: 999;
+	top: 20px;
+	width: 0;
+	height: 0;
+	border: 10px solid #FFFFFF;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+}
+
+
+/*向左的气泡样式*/
+
+.mess_left .mess {
+	margin-left: 20px;
+}
+
+
+/*向右的气泡样式*/
+
+.mess_right .mess {
+	float: right;
+	margin-right: 20px;
+}
+
+
+/*向左的箭头样式*/
+
+.mess_left .tria {
+	border-left-color: transparent;
+	left: 1px;
+}
+
+
+/*向右的箭头样式*/
+
+.mess_right .tria {
+	right: 1px;
+	border-right-color: transparent;
+}
+
+.tel {
+	text-align: center;
+	margin-top: 10px;
+	padding: .6em 0;
+}
+
+
+/*二维码样式*/
+
+.qy {
+	font-size: 15px;
+	padding: 10px;
+}
+.lin{
+	margin-top: 15px;
+}
+.lin span {
+	display: inline-block;
+	line-height: 2em;
+	height: 2em;
+}
+
+.icon-83 {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border: transparent;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+/*收货地址样式*/
+.addr {
+	background: #a2a0a0;
+	padding: 0 6px;
+	border-radius: 5px;
+}
+.address .weui_switch:after, .weui_switch:before{
+	height:23px;
+}
+.address .weui_switch{
+	height:26px;
+	vertical-align : text-top;
+}
+.plac img {
+	padding: 10px;
+	width: 65%;
+	border-radius: 10px;
+	background: #FFFFFF;
+}
+
+/*消息中心样式*/
+.messages_time{
+	text-align: center;
+	margin:10px 0 5px;
+}
+.messages .weui_cells{
+	border-radius:10px;
+	margin:0 auto;
+	width: 94%;
+}
+/*商品购买关闭按钮*/
+
+.weui_cell_ft .colse {
+	position: absolute;
+	right: 12px;
+	text-align: center;
+	top: 10px;
+	width: 25px;
+	height: 25px;
 	border-radius: 50%;
 	background: #B0B0B0;
 	font-size: 20px;
-	color:#ffffff;
+	color: #ffffff;
 	display: inline-block;
 }
-#affirm{
-	display:none;
+
+#affirm {
+	display: none;
 	position: fixed;
 	bottom: 0;
-	width:100%;
+	width: 100%;
 }

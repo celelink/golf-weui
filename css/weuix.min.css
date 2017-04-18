@@ -742,10 +742,6 @@ input.weui_btn_plain_default {
 	vertical-align: middle
 }
 
-.weui_cell_switch {
-	padding-top: 6px;
-	padding-bottom: 6px
-}
 
 .weui_switch {
 	-webkit-appearance: none;
@@ -971,18 +967,15 @@ input.weui_btn_plain_default {
 	}
 }
 
-.weui_article {
-    padding: 1.25rem 1.875rem;
-    font-size: 1.75rem;
+.weui_article .weui_cells{
+    padding: 1.25rem 1.875rem .5rem;
+    margin-bottom: .4rem;
 }
-
+.weui_article p{
+    font-size: 1.5rem;
+}
 .weui_article section {
 	margin-bottom: 1.5em
-}
-
-.weui_article h1 {
-	font-weight: bold;
-	margin-bottom:1.25rem;
 }
 
 .weui_article h2 {

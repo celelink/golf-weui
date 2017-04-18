@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" type="text/css" href="css/weuix.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/weui3.css"/>
+	</head>
+
+	<body>
+		<div class="commodity">
+			
+		
+		<div class="slide" id="slide1">
+			<ul>
+				<li>
+					<a href="#">
+						<img src="http://7xr193.com1.z0.glb.clouddn.com/1.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://7xr193.com1.z0.glb.clouddn.com/2.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://7xr193.com1.z0.glb.clouddn.com/3.jpg" alt="">
+					</a>
+				</li>
+			</ul>
+			<div class="dot">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="weui_cells">
+			<div class="com_title">高尔夫球杆爆款款<span class="right f-red">￥288</span></div>
+			
+		</div>
+		</div>
+	</body>
+	<script src="js/zepto.min.js"></script>
+	<!--轮播图插件-->
+	<script src="js/swipe.js"></script>
+	<script type="text/javascript">
+		//轮播图的控制操作
+		$('#slide1').swipeSlide({
+			autoSwipe: true, //自动切换默认是
+			speed: 3000, //速度默认4000
+			continuousScroll: true, //默认否
+			transitionType: 'cubic-bezier(0.22, 0.69, 0.72, 0.88)', //过渡动画linear/ease/ease-in/ease-out/ease-in-out/cubic-bezier
+			lazyLoad: true, //懒加载默认否
+			firstCallback: function(i, sum, me) {
+				me.find('.dot').children().first().addClass('cur');
+			},
+			callback: function(i, sum, me) {
+				me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+			}
+		});
+	</script>
+
+</html>
