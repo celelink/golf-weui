@@ -90,17 +90,20 @@
 
 /*商品详情样式*/
 .shop{
-	padding:/*2.135%*/0 4%;
+	padding:/*2.135%*/0 2.378%;
 	background:#ebecee;;
 }
+.shop a{
+	width:100%;
+}
 .shop .weui-flex-item{
-	margin:1.0675%
+	margin:2.378%
 }
 .shop .img-radius{
 	border-radius: 3px 3px 0 0;
 }
 .describe{
-	padding:5% 5px;
+	padding:4% 5px;
 	background: #FFFFFF;
 }
 .weui_panel [class^="icon"]{
