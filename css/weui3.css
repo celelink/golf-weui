@@ -131,11 +131,17 @@
 	color: #000000;
 }
 .shop .weui-flex-item {
-	margin: 2.378%
+	margin: 0 2.378%;
 }
 
 .shop .img-radius {
 	border-radius: 3px 3px 0 0;
+}
+
+.page-bd .data-flex {
+	padding: 0;
+	height: 100%;
+	margin-top: 10px;
 }
 .places img {
 	width: 100%;
@@ -157,7 +163,7 @@
 }
 
 .describe {
-	padding: 4% 5px;
+	padding: 2% 5px;
 	background: #FFFFFF;
 }
 
@@ -235,10 +241,6 @@
 	margin-right: 10PX;
 }
 
-.page-bd .data-flex {
-	padding: 0;
-	height: 100%;
-}
 
 .golfname {
 	font-weight: 500;
