@@ -2747,7 +2747,7 @@ html {
 }
 
 a {
-	color: #18b4ed;
+	color: #04be02;
 	text-decoration: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
@@ -3524,7 +3524,8 @@ input.bg-orange-b {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	border: 0
+	border: 0;
+	z-index: 88;
 }
 
 .slide .slide-desc {
@@ -4271,7 +4272,8 @@ a.img-border:hover {
 }
 
 .pager {
-	font-size: 14px
+	font-size: 14px;
+	background: #FFFFFF;
 }
 
 .pager:after {
@@ -6145,7 +6147,7 @@ a.img-border:hover {
 .weui-agree {
 	display: block;
 	font-size: 16px;
-	padding: .5em 15px
+	padding: .5em 19px
 }
 
 .weui-agree a {
