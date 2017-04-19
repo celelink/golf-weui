@@ -76,8 +76,9 @@
 	bottom: 0;
 	right: 0;
 	border-radius: inherit;
+	background-color: rgba(0, 0, 0, 0.498039);
 }
-.part{
+.part .weui_cell:nth-child(1){
 	padding: 15px;
 }
 
