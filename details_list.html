@@ -1,48 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 	<head>
-		<meta charset="UTF-8">
-		<title>新闻列表</title>
-		<link rel="stylesheet" type="text/css" href="css/weuix.min.css" />
+		<meta charset="utf-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<link rel="stylesheet" href="css/weuix.min.css" />
+		<link rel="stylesheet" href="https://at.alicdn.com/t/font_zhcqmlf4p6lp7gb9.css" />
 		<link rel="stylesheet" type="text/css" href="css/weui3.css" />
 	</head>
 
-	<body>
-		<div>
-			<div class="weui_cells" style="padding:10px 15px;background:#ebecee">
-				<p class="left">新闻中心</p>
-			</div>
-			<div class="router-view news">
-				<div class="weui_panels">
-					<div style="margin:0 15px 10px;box-shadow: 0px 0px 3px 3px gainsboro;">
-						<a href="details_new.html">
-							<div class="" style="border-radius: 2px;">
-								<div class="m-img" style="background-image: url(&quot;https://cdn.xiaotaojiang.com/uploads/82/1572ec37969ee263735262dc017975/_.jpg&quot;);"></div>
-								<div class="f-black " style="padding:5px 10px;background: #FFFFFF;">
-									洗颜新潮流！sad撒的撒打算的
-									<br> <span class="m-time iconfont icon-iconfontshijian f13 f-gray"></span><span class="f13 f-gray" style="margin-left:5px">2016-03-18</span>
-								</div>
-							</div>
-						</a>
+	<body ontouchstart style="background-color: #f8f8f8;">
+		<div class="weui_tab tab-bottom">
+			<!--首页选项卡-->
+			<div class="weui_tab_bd" style="hidden;background: #ebecee;">
+				<div class="weui_tab_bd_item" style="display: block;">
+					<div class="" style="padding:5px 15px;overflow: hidden">
+						<p class="left">新闻列表</p>
 					</div>
-					<div style="margin:0 15px 10px;box-shadow: 0px 0px 3px 3px gainsboro;">
-						<a href="details_new.html">
-							<div class="" style="border-radius: 2px;">
-								<div class="m-img" style="background-image: url(&quot;https://cdn.xiaotaojiang.com/uploads/82/1572ec37969ee263735262dc017975/_.jpg&quot;);"></div>
-								<div class="f-black " style="padding:5px 10px;background: #FFFFFF;">
-									洗颜新潮流！人气洁面皂排行榜
-									<br> <span class="m-time iconfont icon-iconfontshijian f13 f-gray"></span><span class="f13 f-gray" style="margin-left:5px">2016-03-18</span>
-								</div>
+					<div class="router-view news">
+						<div class="weui_panels">
+							<div style="margin:0 15px 10px;box-shadow: 0px 0px 3px 3px gainsboro;">
+								<a href="details_new.html">
+									<div class="" style="border-radius: 2px;">
+										<div class="m-img" style="background-image: url(&quot;https://cdn.xiaotaojiang.com/uploads/82/1572ec37969ee263735262dc017975/_.jpg&quot;);"></div>
+										<div class="f-black " style="padding:2px 10px;background: #FFFFFF;">
+											洗颜新潮流空气净化器精选撒的撒打
+											<p class="m-time iconfont icon-iconfontshijian f13 f-gray" style="padding:4px 0"><span class="f13 f-gray" style="margin-left:5px">2016-03-18</span></p>
+										</div>
+									</div>
+								</a>
 							</div>
-						</a>
+							<div style="margin:0 15px 10px;box-shadow: 0px 0px 3px 3px gainsboro;">
+								<a href="details_new.html">
+									<div class="" style="border-radius: 2px;">
+										<div class="m-img" style="background-image: url(&quot;https://cdn.xiaotaojiang.com/uploads/82/1572ec37969ee263735262dc017975/_.jpg&quot;);"></div>
+										<div class="f-black " style="padding:2px 10px;background: #FFFFFF;">
+											洗颜新潮流！人气洁面皂排行榜
+											<p class="m-time iconfont icon-iconfontshijian f13 f-gray" style="padding:4px 0"><span class="f13 f-gray" style="margin-left:5px">2016-03-18</span></p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<script src="js/zepto.min.js"></script>
 	</body>
-	<script src="js/zepto.min.js"></script>
-	<script src="js/updown.js"></script>
-	<script src="js/lazyimg.js"></script>
-	
+
 </html>
