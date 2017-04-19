@@ -86,7 +86,7 @@
 
 .right-P {
 	position: absolute;
-	right: .5em;
+	right: 10px;
 	width: 9em;
 	padding: 0;
 }
@@ -98,7 +98,6 @@
 .fi {
 	height: 2.4em;
 	line-height: 3em;
-	font-size: small;
 }
 
 .weui_cell:before {

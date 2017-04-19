@@ -81,10 +81,10 @@
 								<p>上海市松江区<span class="icon icon-68"></span></p>
 							</div>
 							<div class="weui_cell right-P">
-								<div class="weui_cell_hd"><label for="" class="weui_label1">区域:</label></div>
 								<div class="weui_cell_bd weui_cell_primary">
-									<input class="weui_input fi tright" type="text" value="" id='ss' />
+									<input class="weui_input fi tright " type="text" value="" name="" id='ss' placeholder="选择地区"/>
 								</div>
+								<div class="weui_cell_hd iconfont icon-unfold"></div>
 							</div>
 						</div>
 					</div>
@@ -414,7 +414,9 @@
 				});
 			});
 		</script>
+		<script type="text/javascript">
 				//城市选择的脚本处理
+				
 				$("#ss").cityPicker({
 					title: "选择省市",
 					showDistrict: false
