@@ -97,7 +97,7 @@
 
 .right-P {
 	position: absolute;
-	right: 10px;
+	right: 15px;
 	width: 9em;
 	padding: 0;
 }
@@ -108,6 +108,7 @@
 
 .right-P .iconfont{
 	margin-left:3px;
+	padding-top: 2px;
 }
 
 .weui_cell:before {
