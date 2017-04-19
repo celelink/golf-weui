@@ -228,7 +228,7 @@ input.weui_btn_mini {
 }
 
 .weui_btn_area {
-	margin: 1.17647059em 15px .3em
+	margin: .3em 15px .3em
 }
 
 .weui_btn_area.weui_btn_area_inline {
@@ -6147,7 +6147,7 @@ a.img-border:hover {
 .weui-agree {
 	display: block;
 	font-size: 16px;
-	padding: .5em 19px
+	padding: .3em 15px
 }
 
 .weui-agree a {

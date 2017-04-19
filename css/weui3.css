@@ -2,7 +2,7 @@
 
 /*未选中的颜色*/
 
-[class*="icon-"] {
+[class*="icon-wei-"] {
 	color: #b0b0b0;
 }
 
@@ -22,7 +22,9 @@
 	text-align: center;
 	font-size: 22px;
 }
-
+.weui_tabbar_item p {
+	font-size: 13px;
+}
 
 /*球馆加盟样式*/
 
@@ -68,7 +70,6 @@
 }
 
 /*球馆加盟标题的样式*/
-
 .vux-masker {
 	position: absolute;
 	top: 0;
@@ -90,6 +91,18 @@
 .m-time{
 	padding:3px 0
 }
+.m-title {
+	color: #fff;
+	font-size: 16px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
 /*文字的定位以及样式*/
 .details .m-img {
 	padding-bottom: 50%;
@@ -103,7 +116,6 @@
 }
 
 /*球馆头部的处理*/
-
 .right-P {
 	position: absolute;
 	right: 15px;
@@ -121,11 +133,9 @@
 	margin-left:3px;
 	padding-top: 2px;
 }
-
 .weui_cell:before {
 	border: 0;
 }
-
 .aux {
 	font-size: 15px;
 	color: #979797;
@@ -149,7 +159,6 @@
 .shop .img-radius {
 	border-radius: 3px 3px 0 0;
 }
-
 .page-bd .data-flex {
 	padding: 0;
 	height: 100%;
@@ -159,7 +168,6 @@
 	width: 100%;
 	height: 100%;
 }
-
 
 /*商品详情样式*/
 .com_title{
@@ -202,7 +210,6 @@
 .weui_panel_access section {
 	padding: 10px;
 }
-
 .pur {
 	width: 100%;
 	height: 3em;
@@ -235,26 +242,7 @@
 	width: 9em;
 }
 
-.weui_tabbar_item p {
-	font-size: 13px;
-}
-
-
-.m-title {
-	color: #fff;
-	font-size: 16px;
-	position: absolute;
-	left: 0;
-	right: 0;
-	width: 100%;
-	text-align: center;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
 /*个人中心消息图标定位*/
-
 .icon-wei-xiaoxi {
 	position: absolute;
 	top: .5em;
@@ -293,16 +281,15 @@
 	-webkit-transform: scaleY(.5);
 	transform: scaleY(.5)
 }
-.weui_cells:last-child:after{
-	border-bottom: transparent;
-}
 .per .weui_cell {
 	padding: 5px 15px;
 }
 .per .weui_cell_hd{
 	padding-top:2px;
 }
-
+.per .weui_cells:before{
+	border: none;
+}
 /*个人中心我的钱包*/
 .account{
 	position: relative;
@@ -365,20 +352,10 @@
 	padding-top:3px;
 	width: 100%;
 }
-.per .weui_cells:before{
-	border: none;
+.weui_cells:last-child:after{
+	border-bottom: transparent;
 }
 /*新手帮助向左的聊天气泡的样式*/
-
-
-/*左右气泡的公共样式*/
-
-.mess_left,
-.mess_right {
-	position: relative;
-	overflow: hidden;
-}
-
 .mess_left .mess,.mess_right .mess {
 	margin-top: 10px;
 	background: #FFFFFF;
@@ -405,38 +382,29 @@
 	border-top-color: transparent;
 	border-bottom-color: transparent;
 }
-
-
+/*左右气泡的公共样式*/
+.mess_left,
+.mess_right {
+	position: relative;
+	overflow: hidden;
+}
 /*向左的气泡样式*/
-
 .mess_left .mess {
 	margin-left: 20px;
 }
-
-
 /*向右的气泡样式*/
-
 .mess_right .mess {
 	float: right;
 	margin-right: 20px;
 }
-
-
-/*向左的箭头样式*/
-
 .mess_left .tria {
 	border-left-color: transparent;
 	left: 1px;
 }
-
-
-/*向右的箭头样式*/
-
 .mess_right .tria {
 	right: 1px;
 	border-right-color: transparent;
 }
-
 .tel {
 	text-align: center;
 	margin-top: 10px;
@@ -444,23 +412,25 @@
 	font-size: 20px;
 }
 
-
-/*二维码样式*/
-
+/*推广二维码样式*/
 .qy {
 	font-size: 15px;
 	padding: 10px;
 }
 .lin{
-	margin-top: 15px;
+	margin-top: 8px;
 }
 .lin span {
 	display: inline-block;
 	line-height: 2em;
 	height: 2em;
 }
-
-.icon-83 {
+.addr {
+	background: #c5c5c5;
+	padding: 0 6px;
+	border-radius: 5px;
+}
+.lin .icon-83 {
 	position: relative;
 	width: 30px;
 	height: 30px;
@@ -468,12 +438,14 @@
 	margin-left: 10px;
 	border-radius: 5px;
 }
-/*收货地址样式*/
-.addr {
-	background: #a2a0a0;
-	padding: 0 6px;
-	border-radius: 5px;
+.plac img {
+	padding: 10px;
+	width: 65%;
+	border-radius: 10px;
+	background: #FFFFFF;
 }
+/*收货地址样式*/
+
 .address .weui_switch:after, .weui_switch:before{
 	height:23px;
 }
@@ -481,12 +453,7 @@
 	height:26px;
 	vertical-align : text-top;
 }
-.plac img {
-	padding: 10px;
-	width: 65%;
-	border-radius: 10px;
-	background: #FFFFFF;
-}
+
 
 /*消息中心样式*/
 .messages_time{
@@ -572,4 +539,13 @@
 /*我的球友*/
 .partner .weui_cells_access{
 	margin-bottom:5px;
+}
+/*注册*/
+.register .weui-agree {
+    display: block;
+    font-size: 16px;
+    padding: .5em 19px;
+}
+.register .weui_btn_area{
+	margin: 1.3em 15px .3em
 }
