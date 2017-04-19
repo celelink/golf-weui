@@ -1,31 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+
 	<head>
-		<meta charset="UTF-8">
-		<title>新闻详情</title>
-		<link rel="stylesheet" type="text/css" href="css/weuix.min.css"/>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<link rel="stylesheet" href="css/weuix.min.css" />
+		<link rel="stylesheet" href="https://at.alicdn.com/t/font_zhcqmlf4p6lp7gb9.css" />
+		<link rel="stylesheet" type="text/css" href="css/weui3.css" />
 	</head>
-	<body>
-		<div class="weui_article">
-            <section>
-                <h1 class="title">小标题</h1>
-                <p>2017-04-15</p>
-                <section>
-                    <p><img class="img-radius img-max img-border" src="http://7xr193.com1.z0.glb.clouddn.com/1.jpg" alt="" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute小说：以刻画人物形象为中心，通过完整的故事情节和环境描写来反映社会生活的文学体裁。人物、情节、环境是小说的三要素。情节一般包括开端、发展、高潮、结局四部分，有的包括序幕、尾声。环境包括自然环境和社会环境。</p>
-                </p><p>小说：以刻画人物形象为中心，通过完整的故事情节和环境描写来反映社会生活的文学体裁。人物、情节、环境是小说的三要素。情节一般包括开端、发展、高潮、结局四部分，有的包括序幕、尾声。环境包括自然环境和社会环境。</p>
-                 </section>
-            </section>
-        </div>
+
+	<body ontouchstart>
+		<div class="router-view details" style="margin-top:10px">
+			<div class="weui_panels">
+				<div style="margin:0 15px 10px;letter-spacing: 2px;">
+					<div class="new_title">
+						<h3 class="f18" style="line-height:22px;">高尔夫深圳国际赛前两轮分组 李昊桐将比肩沃森</h3>
+						<p class="f13 f-gray" style="padding:10px 0"> 2017-0419</p>
+					</div>
+					<div class="m-img" style="background-image: url(&quot;https://cdn.xiaotaojiang.com/uploads/82/1572ec37969ee263735262dc017975/_.jpg&quot;);"></div>
+					<p style="padding:10px 0">（搜狐体育 郭健4月18日发自深圳）高尔夫2017深圳国际赛将于4月20-23日在深圳正中高尔夫球会举行，这是这一由欧洲职业高尔夫巡回赛和中国高尔夫球协会共同认证，中国大陆唯一以城市命名的欧巡一级赛事第三度落户深圳。卫冕冠军韩国球员李首民美国大师赛得主巴巴-沃森以及本土球星李昊桐均将征战这一总奖金达到280万美金的赛事。4月20日深圳国际赛将展开首轮争夺，以三人一组从1号洞、10号洞同时发球，目前前两轮分组已经确定。中国头号球手李昊桐将与两届美国大师赛得主巴巴-沃森、英格兰名将汤米-弗利特伍德（TommyFleetwood）同组出发，时间为上午7:30。卫冕冠军李首民则与中国另外一位名将吴阿顺和奥地利好手本德-维斯伯格（Bernd Wiesberger）结伴而行。</p>
+				</div>
+			</div>
+		</div>
+		<script src="js/zepto.min.js"></script>
 	</body>
-	<script src="js/zepto.min.js"></script>
-	<script type="text/javascript">
-		$(function() {
-			var index=sessionStorage.getItem("stateold")
-			sessionStorage.setItem("statenew", index);
-		});
-	</script>
+
 </html>
