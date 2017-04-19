@@ -37,46 +37,11 @@
 				</table>
 			</div>
 			<div class="weui_cells" style="padding:0 15px 0  0">
-				<div class="left">
-					<div class="weui_cell weui_cell_switch">
-						<div class="weui_cell_ft">
-							<input class="weui_switch" type="checkbox" id='ck'checked="checked"/>
-						</div>
-						<div class="weui_cell_hd weui_cell_primary">设置为默认</div>
-					</div>
-				</div>
 				<div class="right">
 					<a href="address_editor.html" class="weui_btn weui_btn_mini bg-blue"><i class="icon icon-115"></i>编辑</a>
-					<a href="#" id="sd2" class="weui_btn weui_btn_mini weui_btn_warn"><i class="icon icon-26"></i>删除</a>
 				</div>
 			</div>
 		</div>
 	</body>
 	<script src="js/zepto.min.js"></script>
-	<script type="text/javascript">
-		$(document).on("click", "#sd2", function() {
-			$.confirm("您确定要删除吗?", "确认删除?", function() {
-				$.toast("删除成功!");
-			}, function() {
-				//取消操作
-			});
-		});
-		$(function() {
-			//设置收货地址是否为默认 true为打开 false为关闭
-			if(sessionStorage.getItem("state")){
-				$('#ck').checked=true;
-			}
-			//设置默认按钮的点击事件
-			$('#ck').click(function() {
-				var $ck = $('#ck:checked').val();
-				if($ck == 'on') {
-					$.alert('默认地址设置成功', "温馨提示");
-				} else {
-					$.alert('默认地址取消成功', "温馨提示");
-				}
-
-			});
-		});
-	</script>
-
 </html>

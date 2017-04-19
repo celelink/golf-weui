@@ -3545,7 +3545,7 @@ input.bg-orange-b {
 
 .slide .dot {
 	position: absolute;
-	right: 10px;
+	right: 15px;
 	bottom: 10px;
 	z-index: 5;
 	font-size: 0

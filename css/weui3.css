@@ -293,7 +293,9 @@
 	-webkit-transform: scaleY(.5);
 	transform: scaleY(.5)
 }
-
+.weui_cells:last-child:after{
+	border-bottom: transparent;
+}
 .per .weui_cell {
 	padding: 5px 15px;
 }
@@ -568,6 +570,6 @@
 	margin-left: 8%;
 }
 /*我的球友*/
-.weui_cells_access{
+.partner .weui_cells_access{
 	margin-bottom:5px;
 }
