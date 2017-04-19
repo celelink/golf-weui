@@ -47,7 +47,7 @@
 /*图片的样式处理*/
 
 .m-img {
-	padding-bottom: 45%;
+	padding-bottom: 42%;
 	display: block;
 	position: relative;
 	max-width: 100%;
@@ -56,7 +56,16 @@
 	cursor: pointer;
 	border-radius: 2px;
 }
-
+.news .m-img {
+	padding-bottom: 38%;
+	display: block;
+	position: relative;
+	max-width: 100%;
+	background-size: cover;
+	background-position: center center;
+	cursor: pointer;
+	border-radius: 2px;
+}
 
 /*球馆加盟标题的样式*/
 
