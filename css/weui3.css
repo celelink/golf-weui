@@ -168,7 +168,7 @@
 }
 
 .weui_panel [class^="icon"] {
-	font-size: 1.6em;
+	font-size: 22px;
 }
 
 .weui_panel_access section {
@@ -244,7 +244,7 @@
 
 .golfname {
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .name_mar {
@@ -258,7 +258,7 @@
 	left: 53px;
 	width: 100%;
 	height: 1px;
-	color: #f4f4f4;
+	color: #d4d4d4;
 	-webkit-transform: scaleY(.5);
 	transform: scaleY(.5)
 }
@@ -329,6 +329,9 @@
 	border-top: 1px dashed #FFFFFF;
 	padding-top:3px;
 	width: 100%;
+}
+.per .weui_cells:before{
+	border: none;
 }
 /*新手帮助向左的聊天气泡的样式*/
 
