@@ -6,8 +6,7 @@
 		<title>设置中心</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
 		<link rel="stylesheet" href="css/weuix.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/weui3.css" />
-		<link rel="stylesheet" href="https://at.alicdn.com/t/font_ccgot3sksft7qfr.css" />
+		<link rel="stylesheet" type="text/css" href="css/golf.css" />
 	</head>
 
 	<body>
@@ -49,7 +48,9 @@
 					<span class="weui_cell_ft"></span>
 				</a>
 			</div>
-			<button class="weui_btn weui_btn_primary" >退出登录</button>
+		</div>
+		<div class="weui_btn_area" style="margin-top: 30px;">
+			<button class="weui_btn weui_btn_primary exit">退出登录</button>
 		</div>
 	</body>
 	<script src="js/zepto.min.js"></script>
@@ -66,6 +67,9 @@
 			var a = $(this)[0].innerText.slice(2, 6);
 			modi(a);
 		});
+		$(".exit").click(function(){
+			$.toast("退出成功")
+		})
 	</script>
 
 </html>

@@ -410,6 +410,7 @@
 	margin-top: 10px;
 	padding: .7em 0;
 	font-size: 20px;
+	color: #04be02;
 }
 
 /*推广二维码样式*/
@@ -426,20 +427,22 @@
 	height: 2em;
 }
 .addr {
-	background: #c5c5c5;
+	background: #d4d4d4;
 	padding: 0 6px;
 	border-radius: 5px;
 }
-.lin .icon-83 {
+.lin .icon-dian {
 	position: relative;
 	width: 30px;
 	height: 30px;
 	border: transparent;
 	margin-left: 10px;
 	border-radius: 5px;
+	background: #d4d4d4;
 }
 .plac img {
 	padding: 10px;
+	margin:10px 0 0;
 	width: 65%;
 	border-radius: 10px;
 	background: #FFFFFF;
@@ -453,8 +456,22 @@
 	height:26px;
 	vertical-align : text-top;
 }
-
-
+.address .weui_cells{
+	border-top:1px solid #d4d4d4 ;
+	padding:5px 15px 0  0;
+}
+.address .weui_btn_primary{
+	position: fixed;
+	bottom:0;
+}
+.address_null{
+	margin-top:10px;
+	line-height: 35px;
+	padding: 10px;
+}
+.address_block{
+	display: none;
+}
 /*消息中心样式*/
 .messages_time{
 	text-align: center;
@@ -467,7 +484,7 @@
 }
 /*商品购买关闭按钮*/
 
-.weui_cell_ft .icon-close {
+.weui_cell_ft .icon-cuowu {
 	position: absolute;
 	right: 15px;
 	text-align: center;
@@ -486,7 +503,7 @@
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	z-index: 999;
+	z-index: 99;
 }
 /*遮罩层*/
 .mask{
@@ -496,7 +513,7 @@
 	bottom:0;
 	left:0;
 	background: rgba(0, 0, 0, 0.38);
-	z-index: 99;
+	z-index: 9;
 	
 }
 .new_list .weui_media_box.weui_media_appmsg {
@@ -546,6 +563,25 @@
     font-size: 16px;
     padding: .5em 19px;
 }
-.register .weui_btn_area{
-	margin: 1.3em 15px .3em
+/*订单中心*/
+.order {
+	background: transparent;
+}
+.order .weui_cells{
+	margin-bottom: 7px;
+}
+.order .weui_cell{
+	padding:0;
+}
+.order .weui_cells table tr:first-child td{
+	border-bottom: 1px solid #d4d4d4;
+	padding:8px 15px;
+	font-size: 16px;
+}
+.order .weui_cells table tr:nth-child(2) td{
+	padding:8px 15px 2px;
+}
+.order .weui_cells table tr td{
+	padding:2px 15px;
+	font-size: 14px;
 }

@@ -6,42 +6,55 @@
 		<title>地址管理</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
 		<link rel="stylesheet" href="css/weuix.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/weui3.css" />
+		<link rel="stylesheet" type="text/css" href="css/golf.css" />
 	</head>
 
 	<body>
-
 		<div class="weui_cells address">
-			<div class="weui_cell">
-				<table border="0" cellspacing="0" cellpadding="0">
-					<tr>
-						<td>联系名称：</td>
-						<td>乐众科技</td>
-					</tr>
-					<tr>
-						<td>联系电话：</td>
-						<td>188888888888</td>
-					</tr>
-					<tr>
-						<td>详细地址：</td>
-						<td>上海市松江区</td>
-					</tr>
-					<tr>
-						<td>邮政编码：</td>
-						<td>335200</td>
-					</tr>
-					<tr>
-						<td>身份证号：</td>
-						<td>360622128903515322</td>
-					</tr>
-				</table>
+			<div class="address_null tcenter">
+				<p><i class="iconfont icon-iconfontgantanhao f45 f-gray"></i></p>
+				<p class="f-gray">您还没有收货地址</p>
+				<p><button class="weui_btn weui_btn_plain_primary weui_btn_mini">添加新地址</button></p>
 			</div>
-			<div class="weui_cells" style="padding:0 15px 0  0">
-				<div class="right">
-					<a href="address_editor.html" class="weui_btn weui_btn_mini bg-blue"><i class="icon icon-115"></i>编辑</a>
+			<div class="address_block">
+				<div class="weui_cell">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td>联系名称：</td>
+							<td>乐众科技</td>
+						</tr>
+						<tr>
+							<td>联系电话：</td>
+							<td>188888888888</td>
+						</tr>
+						<tr>
+							<td>详细地址：</td>
+							<td>上海市松江区</td>
+						</tr>
+						<tr>
+							<td>邮政编码：</td>
+							<td>335200</td>
+						</tr>
+						<tr>
+							<td>身份证号：</td>
+							<td>360622128903515322</td>
+						</tr>
+					</table>
+				</div>
+				<div class="weui_cells">
+					<div class="right">
+						<a href="address_editor.html" class="weui_btn weui_btn_mini bg-green"><i class="iconfont icon-pen" style="margin-right: 5px;"></i>编辑</a>
+					</div>
 				</div>
 			</div>
+			<button class="weui_btn weui_btn_primary iconfont icon-tianjia">添加新地址</button>
 		</div>
 	</body>
 	<script src="js/zepto.min.js"></script>
+	<script type="text/javascript">
+		$(".icon-tianjia").click(function(){
+			$(".address_block").css("display",'block');
+			$(".address_null").css("display",'none')
+		})
+	</script>
 </html>
