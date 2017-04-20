@@ -10,72 +10,65 @@
 	</head>
 
 	<body>
-		<div class="weui_panels">
-			<div class="weui_cells weui_cells_access">
+		<div class="weui_panels balance">
+			<div class="weui_cells">
 				<div class="weui_cell right">
 					总金额：<span class="f-red bold">59400</span>
 				</div>
 			</div>
-			<div class="weui_cells weui_cells_access">
-				<div class="weui_cell">
-					<table border="0" cellspacing="0" cellpadding="0" style="width:100%;line-height: 32px;">
-						<tr>
-							<td>项目提成</td>
-							<td style="text-align: right;">+19800</td>
-						</tr>
-						<tr>
-							<td colspan="2">获得时间：2017-04-17 16:45:00</td>
-						</tr>
-					</table>
-				</div>
+			<div class="balance_null">
+				<p class="tcenter f-gray page-hd">暂无新闻</p>
 			</div>
-			<div class="weui_cells weui_cells_access">
-				<div class="weui_cell">
-					<table border="0" cellspacing="0" cellpadding="0" style="width:100%;line-height: 32px;">
-						<tr>
-							<td>业绩分红</td>
-							<td style="text-align: right;">+19800</td>
-						</tr>
-						<tr>
-							<td colspan="2">获得时间：2017-04-17 16:45:00</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-			<div class="weui_cells weui_cells_access">
-				<div class="weui_cell">
-					<table border="0" cellspacing="0" cellpadding="0" style="width:100%;line-height: 32px;">
-						<tr>
-							<td>管理津贴</td>
-							<td style="text-align: right;">+19800</td>
-						</tr>
-						<tr>
-							<td colspan="2">获得时间：2017-04-17 16:45:00</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-			<div class="pager">
-				<div class="pager-left">
-					<div class="pager-first">
-						<a class="pager-nav">首页</a>
-					</div>
-					<div class="pager-pre">
-						<a class="pager-nav">上一页</a>
+			<div class="block">
+				<div class="weui_cells weui_cells_access">
+					<div class="weui_cell">
+						<table border="0" cellspacing="0" cellpadding="0" style="width:100%;line-height: 32px;">
+							<tr>
+								<td>项目提成</td>
+								<td style="text-align: right;">+19800</td>
+							</tr>
+							<tr>
+								<td colspan="2">获得时间：2017-04-17 16:45:00</td>
+							</tr>
+						</table>
 					</div>
 				</div>
-				<div class="pager-cen">1/120</div>
-				<div class="pager-right">
-					<div class="pager-next">
-						<a class="pager-nav">下一页</a>
+				<div class="weui_cells weui_cells_access">
+					<div class="weui_cell">
+						<table border="0" cellspacing="0" cellpadding="0" style="width:100%;line-height: 32px;">
+							<tr>
+								<td>业绩分红</td>
+								<td style="text-align: right;">+19800</td>
+							</tr>
+							<tr>
+								<td colspan="2">获得时间：2017-04-17 16:45:00</td>
+							</tr>
+						</table>
 					</div>
-					<div class="pager-end">
-						<a class="pager-nav">尾页</a>
+				</div>
+				<div class="weui_cells weui_cells_access">
+					<div class="weui_cell">
+						<table border="0" cellspacing="0" cellpadding="0" style="width:100%;line-height: 32px;">
+							<tr>
+								<td>管理津贴</td>
+								<td style="text-align: right;">+19800</td>
+							</tr>
+							<tr>
+								<td colspan="2">获得时间：2017-04-17 16:45:00</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>
 		</div>
 	</body>
 	<script src="js/zepto.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			if($(".balance .weui_cells_access").length > 0) {
+				$(".balance_null").css("display", "none")
+			}
+		})
+	</script>
 
 </html>

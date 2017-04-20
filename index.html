@@ -15,6 +15,7 @@
 			<div class="weui_tab_bd" style="hidden;background: #ebecee;">
 				<div class="weui_tab_bd_item">
 					<div class="slide " id="slide1">
+						<!--轮播图片-->
 						<ul>
 							<li>
 								<a href="#">
@@ -35,12 +36,14 @@
 								<div class="slide-desc">新奥尔良精英赛戴伊搭档福勒 潘政琮与布莱尔组合</div>
 							</li>
 						</ul>
+						<!--列表-->
 						<div class="dot">
 							<span></span>
 							<span></span>
 							<span></span>
 						</div>
 					</div>
+					<!--新闻动态-->
 					<div class="" style="padding:5px 15px;overflow: hidden">
 						<p class="left">新闻动态</p>
 						<a href="details_list.html" class="right f14 f-green" style="line-height: 24px;">更多<span class="iconfont icon-iconfontjiantouyou f-green"></span></a>
@@ -74,6 +77,7 @@
 				</div>
 				<!--球馆加盟选项课-->
 				<div class="weui_tab_bd_item part">
+					<!--球馆加盟头部-->
 					<div class="weui_cells">
 						<div class="weui_cell">
 							<div class="weui_cell_bd weui_cell_primary f14">
@@ -87,6 +91,7 @@
 							</div>
 						</div>
 					</div>
+					<!--球馆列表-->
 					<div class="router-view">
 						<div style="margin-bottom: 10px; overflow: hidden;">
 							<a href="details_arena.html">
@@ -149,7 +154,8 @@
 				<!--商城选项卡-->
 				<div class="shop weui_tab_bd_item ">
 					<div class="page-bd">
-						<div class="weui-flex data-flex">
+						<!--商城第一排-->
+						<div>
 							<a href="details_commodity.html">
 								<div class="weui-flex-item ">
 									<div class="places">
@@ -172,8 +178,6 @@
 									</div>
 								</div>
 							</a>
-						</div>
-						<div class="weui-flex data-flex">
 							<a href="details_commodity.html">
 								<div class="weui-flex-item ">
 									<div class="places">
@@ -196,8 +200,6 @@
 									</div>
 								</div>
 							</a>
-						</div>
-						<div class="weui-flex data-flex">
 							<a href="details_commodity.html">
 								<div class="weui-flex-item ">
 									<div class="places">
@@ -220,8 +222,6 @@
 									</div>
 								</div>
 							</a>
-						</div>
-						<div class="weui-flex data-flex">
 							<a href="details_commodity.html">
 								<div class="weui-flex-item ">
 									<div class="places">
@@ -267,7 +267,7 @@
 							<div class="weui_cell_hd">
 								<p>会员等级：<span class="aux">创始会员</span></p>
 							</div>
-							<div class="weui_cell_bd rights">
+							<div class="weui_cell_bd attention">
 								<p>关注时间：<span class="aux">2017-04-13</span></p>
 							</div>
 						</div>
@@ -392,19 +392,6 @@
 						}
 					}
 				});
-				//搜索框的控制操作
-				$('.searchbar_wrap').searchBar({
-					cancelText: "取消",
-					searchText: '关键字',
-					onfocus: function(value) {},
-					onblur: function(value) {},
-					oninput: function(value) {},
-					onsubmit: function(value) {},
-					oncancel: function() {},
-					onclear: function() {
-
-					}
-				});
 				//轮播图的控制操作
 				$('#slide1').swipeSlide({
 					autoSwipe: true, //自动切换默认是
@@ -423,7 +410,6 @@
 		</script>
 		<script type="text/javascript">
 			//城市选择的脚本处理
-
 			$("#ss").cityPicker({
 				title: "选择省市",
 				showDistrict: false

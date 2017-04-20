@@ -11,51 +11,65 @@
 
 	<body>
 		<div class="messages">
-			<div class="messages_body">
-				<p class="messages_time f-gray">2017-04-18 17:30:45(周二)</p>
-				<div class="weui_cells">
-					<div class="weui_cell">
-						<div class="weui_cell_bd weui_cell_primary">
-							<p style="font-size: 18px;">官方消息</p>
-							<p style="font-size: 14px;">您的销售分红已下发您的账户余额，请注意查收。</p>
+			<div class="message_null">
+				<p class="tcenter f-gray page-hd">暂无消息</p>
+			</div>
+			<div class="block">
+				<div class="messages_body">
+					<p class="messages_time f-gray">2017-04-18 17:30:45(周二)</p>
+					<div class="weui_cells">
+						<div class="weui_cell">
+							<div class="weui_cell_bd weui_cell_primary">
+								<p style="font-size: 18px;">官方消息</p>
+								<p style="font-size: 14px;">您的销售分红已下发您的账户余额，请注意查收。</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="messages_body">
-				<p class="messages_time f-gray">2017-04-18 17:30:45(周二)</p>
-				<div class="weui_cells">
-					<div class="weui_cell">
-						<div class="weui_cell_bd weui_cell_primary">
-							<p style="font-size: 18px;">官方消息</p>
-							<p style="font-size: 14px;">您的销售分红已下发您的账户余额，请注意查收。</p>
+				<div class="messages_body">
+					<p class="messages_time f-gray">2017-04-18 17:30:45(周二)</p>
+					<div class="weui_cells">
+						<div class="weui_cell">
+							<div class="weui_cell_bd weui_cell_primary">
+								<p style="font-size: 18px;">官方消息</p>
+								<p style="font-size: 14px;">您的销售分红已下发您的账户余额，请注意查收。</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="messages_body">
-				<p class="messages_time f-gray">2017-04-18 17:30:45(周二)</p>
-				<div class="weui_cells">
-					<div class="weui_cell">
-						<div class="weui_cell_bd weui_cell_primary">
-							<p style="font-size: 18px;">官方消息</p>
-							<p style="font-size: 14px;">您的销售分红已下发您的账户余额，请注意查收。</p>
+				<div class="messages_body">
+					<p class="messages_time f-gray">2017-04-18 17:30:45(周二)</p>
+					<div class="weui_cells">
+						<div class="weui_cell">
+							<div class="weui_cell_bd weui_cell_primary">
+								<p style="font-size: 18px;">官方消息</p>
+								<p style="font-size: 14px;">您的销售分红已下发您的账户余额，请注意查收。</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="messages_body">
-				<p class="messages_time f-gray">2017-04-18 17:30:45(周二)</p>
-				<div class="weui_cells">
-					<div class="weui_cell">
-						<div class="weui_cell_bd weui_cell_primary">
-							<p style="font-size: 18px;">官方消息</p>
-							<p style="font-size: 14px;">您的销售分红已下发您的账户余额，请注意查收。</p>
+				<div class="messages_body">
+					<p class="messages_time f-gray">2017-04-18 17:30:45(周二)</p>
+					<div class="weui_cells">
+						<div class="weui_cell">
+							<div class="weui_cell_bd weui_cell_primary">
+								<p style="font-size: 18px;">官方消息</p>
+								<p style="font-size: 14px;">您的销售分红已下发您的账户余额，请注意查收。</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</body>
+	<script src="js/zepto.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			if($(".block .messages_body").length>0){
+				$(".block").css("display","block");
+				$(".message_null").css("display","none")
+			}
+		})
+	</script>
 
 </html>

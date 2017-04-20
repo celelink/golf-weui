@@ -68,7 +68,10 @@
 	cursor: pointer;
 	border-radius: 2px;
 }
-
+.list{
+	margin:0 15px 10px;
+	box-shadow: 0px 0px 3px 3px gainsboro;
+}
 /*球馆加盟标题的样式*/
 .vux-masker {
 	position: absolute;
@@ -148,11 +151,12 @@
 	;
 }
 .shop a {
-	width: 100%;
+	display: inline-block;
 	color: #000000;
+	width: 48%;
+	margin: 0 .5% 2.31%;
 }
 .shop .weui-flex-item {
-	margin: 0 2.378%;
 	background: #FFFFFF;
 }
 
@@ -210,6 +214,10 @@
 .weui_panel_access section {
 	padding: 10px;
 }
+/*注册完成之后的商品购买*/
+#affirm .weui_cells:after, .weui_cells:before{
+	border: none;
+}
 .pur {
 	width: 100%;
 	height: 3em;
@@ -218,9 +226,6 @@
 	position: fixed;
 	bottom: 0;
 	border-top: 1px solid #d4d4d4;
-}
-#affirm .weui_cells:after, .weui_cells:before{
-	border: none;
 }
 .pur_left {
 	float: left;
@@ -250,31 +255,30 @@
 	font-size: 1.8em;
 	line-height: 22px;
 }
-
-.rights {
+/*关注时间*/
+.attention {
 	position: absolute;
 	right: 15px;
 }
-
+/*设置页的字体图标控制*/
 .weui_cell_hd [class*="icon-wei-"] {
 	margin-right: 10PX;
-}
-
-
-.golfname {
-	font-weight: 500;
-	font-size: 18px;
 }
 
 .name_mar {
 	padding: 10px 4%;
 }
 
+.golfname {
+	font-weight: 500;
+	font-size: 18px;
+}
+/*个人中心边框线的控制*/
 .per .weui_cells:after,
 .per .weui_cells:before {
 	content: " ";
 	position: absolute;
-	left: 53px;
+	left: 47px;
 	width: 100%;
 	height: 1px;
 	color: #d4d4d4;
@@ -294,30 +298,6 @@
 .account{
 	position: relative;
 	background: #44ba56;
-}
-.integral {
-	height: 100%;
-	width: 100%;
-	padding: 10% 0;
-	text-align: center;
-	transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	/* Internet Explorer */
-	-moz-transform: rotate(45deg);
-	/* Firefox */
-	-webkit-transform: rotate(45deg);
-	/* Safari 和 Chrome */
-	-o-transform: rotate(45deg);
-	/* Opera */
-	transform-origin: 50% 50%;
-	-ms-transform-origin: 50% 50%;
-	/* Internet Explorer */
-	-moz-transform-origin:50% 50%;
-	/* Firefox */
-	-webkit-transform-origin: 50% 50%;
-	/* Safari 和 Chrome */
-	-o-transform-origin: 50% 50%;
-	/* Opera */
 }
 .bord_outer{
 	display: inline-block;
@@ -352,10 +332,46 @@
 	padding-top:3px;
 	width: 100%;
 }
+/*我的球友*/
+.partner .weui_cells_access{
+	margin-bottom:5px;
+}
+/*我的积分控制*/
+.integral {
+	height: 100%;
+	width: 100%;
+	padding: 10% 0;
+	text-align: center;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	/* Internet Explorer */
+	-moz-transform: rotate(45deg);
+	/* Firefox */
+	-webkit-transform: rotate(45deg);
+	/* Safari 和 Chrome */
+	-o-transform: rotate(45deg);
+	/* Opera */
+	transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	/* Internet Explorer */
+	-moz-transform-origin:50% 50%;
+	/* Firefox */
+	-webkit-transform-origin: 50% 50%;
+	/* Safari 和 Chrome */
+	-o-transform-origin: 50% 50%;
+	/* Opera */
+}
 .weui_cells:last-child:after{
 	border-bottom: transparent;
 }
-/*新手帮助向左的聊天气泡的样式*/
+/*积分记录*/
+.balance .weui_cells_access{
+	margin-top: 8px;
+}
+.intergral .weui_cells{
+	margin-bottom: 8px;
+}
+/*新手帮助公共的聊天气泡的样式*/
 .mess_left .mess,.mess_right .mess {
 	margin-top: 10px;
 	background: #FFFFFF;
@@ -369,9 +385,7 @@
 	word-wrap: break-word;
 	line-height: 30px;
 }
-
-.mess_left .tria,
-.mess_right .tria {
+.mess_left .tria,.mess_right .tria {
 	display: inline-block;
 	position: absolute;
 	z-index: 999;
@@ -412,7 +426,6 @@
 	font-size: 20px;
 	color: #04be02;
 }
-
 /*推广二维码样式*/
 .qy {
 	font-size: 15px;
@@ -483,7 +496,6 @@
 	width: 94%;
 }
 /*商品购买关闭按钮*/
-
 .weui_cell_ft .icon-cuowu {
 	position: absolute;
 	right: 15px;
@@ -516,29 +528,7 @@
 	z-index: 9;
 	
 }
-.new_list .weui_media_box.weui_media_appmsg {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-.new_list a.weui_media_box {
-    color: #000;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.new_list .weui_media_box {
-    padding: 15px;
-    position: relative;
-}
-.new_list .weui_media_box.weui_media_appmsg .weui_media_hd {
-    margin-right:0;
-    width: 100%;
-   	height:100%;
-    line-height: 10%;
-    text-align: center;
-}
+/*注册*/
 #form [class*="icon"]{
 	font-size: 22px;
 	color:#868686;
@@ -551,11 +541,7 @@
 }
 #form .weui_cell:before{
 	border-bottom: 1px solid #d4d4d4;
-	margin-left: 8%;
-}
-/*我的球友*/
-.partner .weui_cells_access{
-	margin-bottom:5px;
+	margin-left: 32px;
 }
 /*注册*/
 .register .weui-agree {
@@ -563,6 +549,7 @@
     font-size: 16px;
     padding: .5em 19px;
 }
+
 /*订单中心*/
 .order {
 	background: transparent;

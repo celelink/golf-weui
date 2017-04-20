@@ -11,58 +11,76 @@
 
 	<body>
 		<div class="weui_panel order">
-			<div class="weui_cells">
-				<div class="weui_cell">
-					<table cellspacing="0" cellpadding="0" style="width:100%;">
-						<tr>
-							<td>商品：创始会员</td>
-							<td style="text-align: right;"></td>
-						</tr>
-						<tr>
-							<td colspan="2"><p class="left">总价： ￥19800</p><p class="right">数量：X 1</p></td>
-						</tr>
-						<tr>
-							<td>订单号码：201704171645</td>
-						</tr>
-						<tr>
-							<td>下单时间：2017-04-17 16:45:00</td>
-						</tr>
-						<tr>
-							<td colspan="2">快递公司：顺丰快递</td>
-						</tr>
-						<tr>
-							<td colspan="2">运单编号：810080493659</td>
-						</tr>
-					</table>
-				</div>
+			<div class="order_null">
+				<p class="tcenter f-gray page-hd">暂无订单</p>
 			</div>
-			<div class="weui_cells">
-				<div class="weui_cell">
-					<table border="0" cellspacing="0" cellpadding="0" style="width:100%;">
-						<tr>
-							<td>商品：创始会员</td>
-							<td style="text-align: right;"></td>
-						</tr>
-						<tr>
-							<td colspan="2"><p class="left">总价： ￥19800</p><p class="right">数量：X 1</p></td>
-						</tr>
-						<tr>
-							<td>订单号码：201704171645</td>
-						</tr>
-						<tr>
-							<td>下单时间：2017-04-17 16:45:00</td>
-						</tr>
-						<tr>
-							<td colspan="2">快递公司：顺丰快递</td>
-						</tr>
-						<tr>
-							<td colspan="2">运单编号：810080493659</td>
-						</tr>
-					</table>
+			<div class="block">
+				<div class="weui_cells">
+					<div class="weui_cell">
+						<table cellspacing="0" cellpadding="0" style="width:100%;">
+							<tr>
+								<td>商品：创始会员</td>
+								<td style="text-align: right;"></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<p class="left">总价： ￥19800</p>
+									<p class="right">数量：X 1</p>
+								</td>
+							</tr>
+							<tr>
+								<td>订单号码：201704171645</td>
+							</tr>
+							<tr>
+								<td>下单时间：2017-04-17 16:45:00</td>
+							</tr>
+							<tr>
+								<td colspan="2">快递公司：顺丰快递</td>
+							</tr>
+							<tr>
+								<td colspan="2">运单编号：810080493659</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="weui_cells">
+					<div class="weui_cell">
+						<table border="0" cellspacing="0" cellpadding="0" style="width:100%;">
+							<tr>
+								<td>商品：创始会员</td>
+								<td style="text-align: right;"></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<p class="left">总价： ￥19800</p>
+									<p class="right">数量：X 1</p>
+								</td>
+							</tr>
+							<tr>
+								<td>订单号码：201704171645</td>
+							</tr>
+							<tr>
+								<td>下单时间：2017-04-17 16:45:00</td>
+							</tr>
+							<tr>
+								<td colspan="2">快递公司：顺丰快递</td>
+							</tr>
+							<tr>
+								<td colspan="2">运单编号：810080493659</td>
+							</tr>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>
 	</body>
 	<script src="js/zepto.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			if($(".block .weui_cells").length > 0) {
+				$(".order_null").css("display", "none")
+			}
+		})
+	</script>
 
 </html>

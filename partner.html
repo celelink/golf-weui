@@ -19,53 +19,64 @@
 					<p>共<span class="f-red bold">999</span>人</p>
 				</div>
 			</div>
-			<div class="weui_cells weui_cells_access" style="margin-top: 5px;">
-				<div class="weui_cell">
-					<div class="weui_cell_bd weui_cell_primary">
-						<p>昵称：张三</p>
-						<p>类型：创始会员</p>
-						<p>关注时间：2017-04-17</p>
+			<div class="partner_null">
+				<p class="tcenter f-gray page-hd">暂无球友</p>
+			</div>
+			<div class="block">
+				<div class="weui_cells weui_cells_access" style="margin-top: 5px;">
+					<div class="weui_cell">
+						<div class="weui_cell_bd weui_cell_primary">
+							<p>昵称：张三</p>
+							<p>类型：创始会员</p>
+							<p>关注时间：2017-04-17</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="weui_cells weui_cells_access">
-				<div class="weui_cell">
-					<div class="weui_cell_bd weui_cell_primary">
-						<p>昵称：李四</p>
-						<p>类型：创始会员</p>
-						<p>关注时间：2017-04-17</p>
+				<div class="weui_cells weui_cells_access">
+					<div class="weui_cell">
+						<div class="weui_cell_bd weui_cell_primary">
+							<p>昵称：李四</p>
+							<p>类型：创始会员</p>
+							<p>关注时间：2017-04-17</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="weui_cells weui_cells_access">
-				<a class="weui_cell" href="javascript:;">
-					<div class="weui_cell_bd weui_cell_primary">
-						<p>昵称：王五</p>
-						<p>类型：创始会员</p>
-						<p>关注时间：2017-04-17</p>
-					</div>
-				</a>
-			</div>
-			<div class="weui_cells weui_cells_access">
-				<div class="weui_cell">
-					<div class="weui_cell_bd weui_cell_primary">
-						<p>昵称：赵六</p>
-						<p>类型：创始会员</p>
-						<p>关注时间：2017-04-17</p>
+				<div class="weui_cells weui_cells_access">
+					<a class="weui_cell" href="javascript:;">
+						<div class="weui_cell_bd weui_cell_primary">
+							<p>昵称：王五</p>
+							<p>类型：创始会员</p>
+							<p>关注时间：2017-04-17</p>
+						</div>
+					</a>
+				</div>
+				<div class="weui_cells weui_cells_access">
+					<div class="weui_cell">
+						<div class="weui_cell_bd weui_cell_primary">
+							<p>昵称：赵六</p>
+							<p>类型：创始会员</p>
+							<p>关注时间：2017-04-17</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="weui_cells weui_cells_access">
-				<div class="weui_cell">
-					<div class="weui_cell_bd weui_cell_primary">
-						<p>昵称：钱七</p>
-						<p>类型：创始会员</p>
-						<p>关注时间：2017-04-17</p>
+				<div class="weui_cells weui_cells_access">
+					<div class="weui_cell">
+						<div class="weui_cell_bd weui_cell_primary">
+							<p>昵称：钱七</p>
+							<p>类型：创始会员</p>
+							<p>关注时间：2017-04-17</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</body>
 	<script src="js/zepto.min.js"></script>
-
+	<script type="text/javascript">
+		$(function() {
+			if($(".block .weui_cells").length > 0) {
+				$(".partner_null").css("display", "none");
+			}
+		})
+	</script>
 </html>

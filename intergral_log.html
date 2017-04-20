@@ -10,31 +10,36 @@
 	</head>
 
 	<body>
-		<div class="weui_panels">
-			<div class="weui_cells weui_cells_access">
-				<div class="weui_cell">
-					<table border="0" cellspacing="0" cellpadding="0" style="width:100%;line-height: 32px;">
-						<tr>
-							<td>积分奖励</td>
-							<td style="text-align: right;">+19800</td>
-						</tr>
-						<tr>
-							<td colspan="2">获得时间：2017-04-17 16:45:00</td>
-						</tr>
-					</table>
-				</div>
+		<div class="weui_panels intergral">
+			<div class="intergral_null">
+				<p class="tcenter f-gray page-hd">暂无积分记录</p>
 			</div>
-			<div class="weui_cells weui_cells_access">
-				<div class="weui_cell">
-					<table border="0" cellspacing="0" cellpadding="0" style="width:100%;line-height: 32px;">
-						<tr>
-							<td>积分奖励</td>
-							<td style="text-align: right;">+19800</td>
-						</tr>
-						<tr>
-							<td colspan="2">获得时间：2017-04-17 16:45:00</td>
-						</tr>
-					</table>
+			<div class="block">
+				<div class="weui_cells weui_cells_access">
+					<div class="weui_cell">
+						<table border="0" cellspacing="0" cellpadding="0" style="width:100%;line-height: 32px;">
+							<tr>
+								<td>积分奖励</td>
+								<td style="text-align: right;">+19800</td>
+							</tr>
+							<tr>
+								<td colspan="2">获得时间：2017-04-17 16:45:00</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="weui_cells weui_cells_access">
+					<div class="weui_cell">
+						<table border="0" cellspacing="0" cellpadding="0" style="width:100%;line-height: 32px;">
+							<tr>
+								<td>积分奖励</td>
+								<td style="text-align: right;">+19800</td>
+							</tr>
+							<tr>
+								<td colspan="2">获得时间：2017-04-17 16:45:00</td>
+							</tr>
+						</table>
+					</div>
 				</div>
 			</div>
 			<div class="pager">
@@ -59,5 +64,11 @@
 		</div>
 	</body>
 	<script src="js/zepto.min.js"></script>
-
+	<script type="text/javascript">
+		$(function() {
+			if($(".block .weui_cells").length > 0) {
+				$(".intergral_null").css("display", "none");
+			}
+		})
+	</script>
 </html>

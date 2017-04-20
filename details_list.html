@@ -11,9 +11,11 @@
 
 	<body ontouchstart>
 		<div class="router-view news" style="margin-top:10px">
+			<div class="news_null">
+				<p class="tcenter f-gray page-hd">暂无新闻</p>
+			</div>
 			<div class="weui_panels">
-
-				<div style="margin:0 15px 10px;box-shadow: 0px 0px 3px 3px gainsboro;">
+				<div class="list">
 					<a href="details_new.html">
 						<div class="" style="border-radius: 2px;">
 							<div class="m-img" style="background-image: url(&quot;https://cdn.xiaotaojiang.com/uploads/82/1572ec37969ee263735262dc017975/_.jpg&quot;);"></div>
@@ -25,7 +27,18 @@
 					</a>
 				</div>
 
-				<div style="margin:0 15px 10px;box-shadow: 0px 0px 3px 3px gainsboro;">
+				<div class="list">
+					<div class="" style="border-radius: 2px;">
+						<div class="m-img" style="background-image: url(&quot;https://cdn.xiaotaojiang.com/uploads/82/1572ec37969ee263735262dc017975/_.jpg&quot;);"></div>
+						<div class="f-black " style="padding:2px 10px;background: #FFFFFF;">
+							洗颜新潮流！人气洁面皂排行榜
+							<p class="m-time iconfont icon-iconfontshijian f13 f-gray" style="padding:4px 0"><span class="f13 f-gray" style="margin-left:5px">2016-03-18</span></p>
+						</div>
+					</div>
+					</a>
+				</div>
+
+				<div class="list">
 					<a href="details_new.html">
 						<div class="" style="border-radius: 2px;">
 							<div class="m-img" style="background-image: url(&quot;https://cdn.xiaotaojiang.com/uploads/82/1572ec37969ee263735262dc017975/_.jpg&quot;);"></div>
@@ -37,19 +50,7 @@
 					</a>
 				</div>
 
-				<div style="margin:0 15px 10px;box-shadow: 0px 0px 3px 3px gainsboro;">
-					<a href="details_new.html">
-						<div class="" style="border-radius: 2px;">
-							<div class="m-img" style="background-image: url(&quot;https://cdn.xiaotaojiang.com/uploads/82/1572ec37969ee263735262dc017975/_.jpg&quot;);"></div>
-							<div class="f-black " style="padding:2px 10px;background: #FFFFFF;">
-								洗颜新潮流！人气洁面皂排行榜
-								<p class="m-time iconfont icon-iconfontshijian f13 f-gray" style="padding:4px 0"><span class="f13 f-gray" style="margin-left:5px">2016-03-18</span></p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div style="margin:0 15px 10px;box-shadow: 0px 0px 3px 3px gainsboro;">
+				<div class="list">
 					<a href="details_new.html">
 						<div class="" style="border-radius: 2px;">
 							<div class="m-img" style="background-image: url(&quot;https://cdn.xiaotaojiang.com/uploads/82/1572ec37969ee263735262dc017975/_.jpg&quot;);"></div>
@@ -63,6 +64,13 @@
 			</div>
 		</div>
 		<script src="js/zepto.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				if($(".weui_panels .list").length > 0) {
+					$(".news_null").css("display", "none")
+				}
+			})
+		</script>
 	</body>
 
 </html>
