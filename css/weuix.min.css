@@ -2238,6 +2238,8 @@ input[type=search]::-webkit-search-results-decoration {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-dingwei:before { content: "\e60d"; }
+
 .icon-cuowu:before { content: "\e619"; }
 
 .icon-dianhua:before { content: "\e63f"; }
@@ -2906,7 +2908,7 @@ input.bg-orange-b {
 }
 
 .f-gray {
-	color: #ccc !important
+	color: #888888 !important
 }
 
 .f-yellow {
@@ -3110,7 +3112,7 @@ input.bg-orange-b {
 	width: 100%;
 	color: #fff;
 	font-size: 16px;
-	text-align: center;
+	padding-left:15px;
 	white-space: nowrap;
 	word-break: break-all;
 	text-overflow: ellipsis

@@ -247,7 +247,7 @@
 	position: absolute;
 	top: .5em;
 	right: .5em;
-	font-size: 1.4em;
+	font-size: 1.8em;
 	line-height: 22px;
 }
 
@@ -574,7 +574,7 @@
 	padding:0;
 }
 .order .weui_cells table tr:first-child td{
-	border-bottom: 1px solid #d4d4d4;
+	border-bottom: 1px solid rgba(209, 209, 209, 0.5);
 	padding:8px 15px;
 	font-size: 16px;
 }
