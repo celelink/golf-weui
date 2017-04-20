@@ -549,6 +549,37 @@
     font-size: 16px;
     padding: .5em 19px;
 }
+/*注册广告控制*/
+
+.alert-box{
+	position: absolute;
+	z-index: 9999;
+	
+}
+/*广告图片的控制*/
+.alert-box img{
+	position: fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index: 100;
+	
+}
+
+.alert-circle {
+	position: fixed;
+	z-index: 101;
+	top:15px;
+	right: 15px;
+}
+.alert-sec-circle {
+	stroke-dashoffset: 0;
+	stroke-dasharray: 735;
+	transition: stroke-dashoffset 1s linear;
+}
 
 /*订单中心*/
 .order {

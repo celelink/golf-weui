@@ -6,10 +6,23 @@
 		<title>登录中心</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
 		<link rel="stylesheet" href="css/weuix.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/golf.css"/>
+		<link rel="stylesheet" type="text/css" href="css/golf.css" />
+
 	</head>
 
 	<body ontouchstart style="background-color: #f8f8f8;">
+		<!--广告的显示-->
+		<div id="js-alert-box" class="alert-box">
+			<a href="#"><img src="images/2.jpg" /></a>
+			<svg class="alert-circle" width="48" height="48">
+				<!-- 绿色的进度条 -->
+				<circle cx="24" cy="24" r="20" fill="#FFF" stroke="#43AEFA" stroke-width="2"></circle>
+				<!-- 遮罩层 -->
+				<circle id="js-sec-circle" class="alert-sec-circle" cx="24" cy="24" r="20" fill="transparent" stroke="#F4F1F1" stroke-width="2" transform="rotate(-90 24 24)"></circle>
+				<!-- 倒计时数值 -->
+				<text id="alert-sec-unit" x="17" y="33" fill="#BDBDBD" class=" f-gray f25">9</text>
+			</svg>
+		</div>
 		<form id="form" class="register">
 			<div class="weui_cells weui_cells_form">
 				<!--手机号码-->
@@ -74,8 +87,8 @@
 					</div>
 				</div>
 			</div>
-				<!--相关条款-->
-				<label for="weuiAgree" class="weui-agree f15">
+			<!--相关条款-->
+			<label for="weuiAgree" class="weui-agree f15">
 	            	<input id="weuiAgree" class="weui-agree-checkbox" type="checkbox">
 	            	<span class="weui-agree-text">
 	                	阅读并同意<a href="javascript:void(0);">《相关条款》</a>
@@ -96,13 +109,29 @@
 						//console.log('cuowu');
 					} else {
 						$.toptips('验证通过提交', 'ok');
-						setTimeout(function(){
-						window.location.href = 'goods.html';
-						},1000);
+						setTimeout(function() {
+							window.location.href = 'goods.html';
+						}, 1000);
 					}
 				});
 
 			});
+			//广告倒计时控制
+			$(function(e) {
+				$("#js-alert-box").css("display", "block");
+				var t = 9,
+					n = document.getElementById("js-sec-circle");
+				setInterval(function() {
+					if(0 == t) {
+						$('#js-alert-box').fadeOut(); //location.href = ""; //#时间到后跳转地址
+					} else {
+						t -= 1,
+							document.getElementById("alert-sec-unit").innerHTML = t;
+						var e = Math.round(t / 10 * 160);
+						n.style.strokeDashoffset = e - 150;
+					}
+				}, 1000);
+			})
 		</script>
 	</body>
 
