@@ -206,7 +206,16 @@
 	padding: 2% 5px;
 	background: #FFFFFF;
 }
-
+.new_title{
+	margin-bottom;10px;
+	padding:0 15px
+}
+.floor{
+	position: fixed;
+	bottom:0;
+	width:100%;
+	z-index: 999;
+}
 .weui_panel [class^="icon"] {
 	font-size: 22px;
 }
@@ -511,11 +520,10 @@
 	top: 10px;
 	width: 20px;
 	height:20px;
+    line-height: 20px;
 	border-radius: 50%;
 	background: #B0B0B0;
-	font-size: 16px;
 	color: #ffffff;
-	display: inline-block;
 }
 
 #affirm {
