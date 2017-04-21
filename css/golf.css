@@ -229,12 +229,15 @@
 }
 .pur_left {
 	float: left;
-	padding-left: 10px;
+	padding-left: 15px;
 	font-size: 20px;
+	width:50%;
+	box-sizing: border-box;
 }
 
 .pur_right {
 	float: right;
+	width:50%;
 }
 
 .pur_right button {
@@ -244,7 +247,7 @@
 	color: #ffffff;
 	font-size: 20px;
 	background: #F43530;
-	width: 9em;
+	width: 100%;
 }
 
 /*个人中心消息图标定位*/

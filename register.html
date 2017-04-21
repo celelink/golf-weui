@@ -121,8 +121,7 @@
 				//广告倒计时控制
 				$(function(e) {
 					$("#js-alert-box").css("display", "block");
-					var t = 3,
-						n = document.getElementById("js-sec-circle");
+					var t  = s = 3,n = document.getElementById("js-sec-circle");
 					setInterval(function() {
 						if(0 == t) {
 							$('#js-alert-box').fadeOut(); //location.href = ""; //#时间到后跳转地址
@@ -130,7 +129,7 @@
 							t -= 1,
 								document.getElementById("alert-sec-unit").innerHTML = t;
 							var e = Math.round(t / 10 * 160);
-							n.style.strokeDashoffset = e - 150;
+							n.style.strokeDashoffset = e-(s / 10 * 160);
 						}
 					}, 1000);
 				})
