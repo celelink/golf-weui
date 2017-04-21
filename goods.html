@@ -13,7 +13,7 @@
 		<div class="router-view details">
 			<div class="weui_panels" style="">
 
-				<div class="slide " id="commodity">
+				<div class="slide" id="commodity">
 					<ul>
 						<li>
 							<a href="#">
@@ -28,13 +28,19 @@
 							<a href="#">
 								<img src="http://7xr193.com1.z0.glb.clouddn.com/2.jpg" />
 							</a>
-							<div class="slide-desc left">新奥尔良精英赛戴伊搭档福勒 潘政琮</div>
+							<div class="slide-desc">
+								<p class="left">新奥尔良精英赛戴伊搭档福勒 潘</p>
+								<span class="right f-red">￥265</span>
+							</div>
 						</li>
 						<li>
 							<a href="#">
 								<img src="http://7xr193.com1.z0.glb.clouddn.com/3.jpg" />
 							</a>
-							<div class="slide-desc left">新奥尔良精英赛戴伊搭档福勒</div>
+							<div class="slide-desc">
+								<p class="left">新奥尔良精英赛戴伊搭档福勒 潘</p>
+								<span class="right f-red">￥265</span>
+							</div>
 						</li>
 					</ul>
 					<div class="dot">
@@ -97,6 +103,8 @@
 				</div>
 			</div>
 			<script src="js/zepto.min.js"></script>
+			<script src="js/iscroll.js"></script>
+			<script src="js/swipe.js"></script>
 			<script>
 				$("#act").on("click", function() {
 					$('#affirm').css('display', 'block');
@@ -153,6 +161,21 @@
 				});
 				$(document).on("click", "#pay", function() {
 					$.toast("支付成功");
+				});
+				
+				//轮播图的控制操作
+				$('#commodity').swipeSlide({
+					autoSwipe: true, //自动切换默认是
+					speed: 3000, //速度默认4000
+					continuousScroll: false, //默认否
+					transitionType: 'cubic-bezier(0.22, 0.69, 0.72, 0.88)', //过渡动画linear/ease/ease-in/ease-out/ease-in-out/cubic-bezier
+					lazyLoad: true, //懒加载默认否
+					firstCallback: function(i, sum, me) {
+						me.find('.dot').children().first().addClass('cur');
+					},
+					callback: function(i, sum, me) {
+						me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+					}
 				});
 			</script>
 	</body>
