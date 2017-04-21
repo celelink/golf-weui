@@ -31,11 +31,21 @@
 						<i class="weui_icon_warn"></i>
 					</div>
 				</div>
-				<!--省份-->
+				<!--邮政编码-->
 				<div class="weui_cell">
-					<div class="weui_cell_hd"><label class="weui_label">地区信息：</label></div>
+					<div class="weui_cell_hd"><label class="weui_label">邮政编码：</label></div>
 					<div class="weui_cell_bd weui_cell_primary">
-						<input class="weui_input" type="text" required pattern="[\u4e00-\u9fa5]{2,10}" maxlength="10" placeholder="请选择您的地区信息" emptyTips="请选择您的地区信息" notMatchTips="请输入2~10个之间的汉字">
+						<input class="weui_input" type="tel" required pattern="[0-9]{6}" maxlength="6" placeholder="输入您的邮政编码" emptyTips="请输入邮政编码" notMatchTips="请输入正确的6位数字">
+					</div>
+					<div class="weui_cell_ft">
+						<i class="weui_icon_warn"></i>
+					</div>
+				</div>
+				<!--身份证号码-->
+				<div class="weui_cell">
+					<div class="weui_cell_hd"><label class="weui_label">身份证号：</label></div>
+					<div class="weui_cell_bd weui_cell_primary">
+						<input class="weui_input" type="text" required pattern="[0-9]{16,19}" maxlength="19" placeholder="请填写您的身份证号码" emptyTips="请填写您的身份证号码" notMatchTips="请输入16~19位之间正确的身份证号码">
 					</div>
 					<div class="weui_cell_ft">
 						<i class="weui_icon_warn"></i>

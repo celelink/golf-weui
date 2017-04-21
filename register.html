@@ -11,6 +11,9 @@
 	</head>
 
 	<body ontouchstart style="background-color: #f8f8f8;">
+		<div class="tcenter bg-white">
+			<img style="width:100px;margin-top: 31px;" src="images/logo.png"/>
+		</div>
 		<!--广告的显示-->
 		<div id="js-alert-box" class="alert-box">
 			<a href="#"><img src="images/2.jpg" /></a>
@@ -119,7 +122,7 @@
 			//广告倒计时控制
 			$(function(e) {
 				$("#js-alert-box").css("display", "block");
-				var t = 9,
+				var t = 3,
 					n = document.getElementById("js-sec-circle");
 				setInterval(function() {
 					if(0 == t) {

@@ -2674,8 +2674,11 @@ a:active {
 	background-color: #ef4f4f
 }
 
-.bg-blue {
+.bg-white {
 	background-color: #18b4ed
+}
+.bg-white {
+	background-color: #FFFFFF;
 }
 
 .bg-blue:not(.weui_btn_disabled):visited {

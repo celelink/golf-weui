@@ -268,7 +268,12 @@
 .name_mar {
 	padding: 10px 4%;
 }
-
+.name_mar .logo{
+	width: 65px;
+	display: block;
+	border-radius:50%;
+	border: 1px solid rgba(204, 204, 204, 0.5);
+}
 .golfname {
 	font-weight: 500;
 	font-size: 18px;
