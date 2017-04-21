@@ -280,12 +280,14 @@
 .name_mar {
 	padding: 10px 4%;
 }
+/*用户头像*/
 .name_mar .logo{
 	width: 65px;
 	display: block;
 	border-radius:50%;
 	border: 1px solid rgba(204, 204, 204, 0.5);
 }
+
 .golfname {
 	font-weight: 500;
 	font-size: 18px;
@@ -561,9 +563,12 @@
 }
 /*注册*/
 .register .weui-agree {
-    display: block;
-    font-size: 16px;
     padding: .5em 19px;
+}
+/*注册和登录的logo*/
+.logo{
+	width:150px;
+	margin-top:10px;
 }
 /*注册广告控制*/
 
@@ -589,11 +594,12 @@
 	position: fixed;
 	z-index: 101;
 	top:15px;
-	right: 15px;
+	right: 15px; 
+	width:48px;
+	height:48px;
 }
 .alert-sec-circle {
-	stroke-dashoffset: 0;
-	stroke-dasharray: 735;
+	stroke-dasharray: 180;
 	transition: stroke-dashoffset 1s linear;
 }
 

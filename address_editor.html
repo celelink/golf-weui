@@ -45,7 +45,7 @@
 				<div class="weui_cell">
 					<div class="weui_cell_hd"><label class="weui_label">身份证号：</label></div>
 					<div class="weui_cell_bd weui_cell_primary">
-						<input class="weui_input" type="text" required pattern="[0-9]{16,19}" maxlength="19" placeholder="请填写您的身份证号码" emptyTips="请填写您的身份证号码" notMatchTips="请输入16~19位之间正确的身份证号码">
+						<input class="weui_input" type="text" required pattern="(^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$)|(^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])((\d{4})|\d{3}[Xx])$)" maxlength="18" placeholder="请填写您的身份证号码" emptyTips="请填写您的身份证号码" notMatchTips="请输入16~19位之间正确的身份证号码">
 					</div>
 					<div class="weui_cell_ft">
 						<i class="weui_icon_warn"></i>
@@ -75,7 +75,7 @@
 			$("#formSubmitBtn").on("click", function() {
 				$form.validate(function(error) {
 					if(error) {
-						//console.log('cuowu');
+						//console.log('错误');
 					} else {
 						$.toptips('验证通过提交', 'ok');
 						setTimeout(function(){
