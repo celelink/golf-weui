@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
 		<link rel="stylesheet" href="css/weuix.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/golf.css" />
+		<link rel="stylesheet" type="text/css" href="css/iosSelect.css"/>
 	</head>
 
 	<body ontouchstart style="background-color: #f8f8f8;">
@@ -83,9 +84,13 @@
 							<div class="weui_cell_bd weui_cell_primary f14">
 								<p><span>上海市松江区</span><span class="iconfont icon-dingwei f15"></span></p>
 							</div>
-							<div class="weui_cell right-P f14">
-								<div class="weui_cell_bd weui_cell_primary">
-									<input class="weui_input tright " type="text" id='ss' placeholder="选择地区" />
+							<div class="weui_cell right-P f12">
+								<div class="form-item item-line" id="select_contact">
+									<div class="pc-box">
+										<input type="hidden" name="contact_province_code" data-id="0001" id="contact_province_code" value="" data-province-name="">
+										<input type="hidden" name="contact_city_code" id="contact_city_code" value="" data-city-name="">
+										<span data-city-code="510100" data-province-code="510000" data-district-code="510105" id="show_contact">四川省 成都市 青羊区</span>
+									</div>
 								</div>
 								<div class="weui_cell_hd iconfont icon-unfold"></div>
 							</div>
@@ -360,11 +365,11 @@
 		<script src="js/swipe.js"></script>
 		<!--上拉下拉刷新插件-->
 		<script src="js/updown.js"></script>
-		<script src="js/lazyimg.js"></script>
+		<script src="js/vconsole.min.js"></script>
 		<!--弹出窗插件-->
-		<script src="js/picker.js"></script>
+		<script src="js/areaData_v2.js"></script>
 		<!--城市联动插件-->
-		<script src="js/picker-city.js"></script>
+		<script src="js/iosSelect.js"></script>
 		<script>
 			$(function() {
 				if(!(sessionStorage.getItem("state"))) {
@@ -409,10 +414,35 @@
 			});
 		</script>
 		<script type="text/javascript">
-			//城市选择的脚本处理
-			$("#ss").cityPicker({
-				title: "选择省市",
-				showDistrict: false
+			var selectContactDom = $('#select_contact');
+			var showContactDom = $('#show_contact');
+			var contactProvinceCodeDom = $('#contact_province_code');
+			var contactCityCodeDom = $('#contact_city_code');
+			selectContactDom.bind('click', function() {
+				var sccode = showContactDom.attr('data-city-code');
+				var scname = showContactDom.attr('data-city-name');
+				var oneLevelId = showContactDom.attr('data-province-code');
+				var twoLevelId = showContactDom.attr('data-city-code');
+				var threeLevelId = showContactDom.attr('data-district-code');
+				var iosSelect = new IosSelect(3, [iosProvinces, iosCitys, iosCountys], {
+					title: '地址选择',
+					itemHeight: 35,
+					relation: [1, 1, 0, 0],
+					oneLevelId: oneLevelId,
+					twoLevelId: twoLevelId,
+					threeLevelId: threeLevelId,
+					callback: function(selectOneObj, selectTwoObj, selectThreeObj) {
+						contactProvinceCodeDom.val(selectOneObj.id);
+						contactProvinceCodeDom.attr('data-province-name', selectOneObj.value);
+						contactCityCodeDom.val(selectTwoObj.id);
+						contactCityCodeDom.attr('data-city-name', selectTwoObj.value);
+						console.log(selectOneObj.id, selectOneObj, twoLevelId);
+						showContactDom.attr('data-province-code', selectOneObj.id);
+						showContactDom.attr('data-city-code', selectTwoObj.id);
+						showContactDom.attr('data-district-code', selectThreeObj.id);
+						showContactDom.html(selectOneObj.value + ' ' + selectTwoObj.value + ' ' + selectThreeObj.value);
+					}
+				});
 			});
 		</script>
 	</body>
