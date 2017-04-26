@@ -10,7 +10,7 @@
 /*已选中的颜色*/
 
 [class*="icon-yi-"] {
-	color: #44ba56;
+	color: #29aae0;
 }
 
 
@@ -314,7 +314,7 @@
 /*个人中心我的钱包*/
 .account{
 	position: relative;
-	background: #44ba56;
+	background: #29AAE0;
 }
 .bord_outer{
 	display: inline-block;
@@ -563,10 +563,16 @@
 .register .weui-agree {
     padding: .5em 19px;
 }
+.codeStyle{
+	padding-top:0;
+	padding-bottom:0;
+	
+}
 /*注册和登录的logo*/
 .logo{
-	width:150px;
-	margin-top:10px;
+	width:160px;
+	margin-top:40px;
+	margin-bottom:28px;
 }
 /*注册广告控制*/
 
