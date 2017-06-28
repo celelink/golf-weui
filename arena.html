@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<link rel="stylesheet" href="css/weuix.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/golf.css" />
+		<link rel="stylesheet" type="text/css" href="css/iosSelect.css" />
+	</head>
+
+	<body ontouchstart style="background-color: #f8f8f8;">
+		<div class="weui_tab tab-bottom">
+			<!--首页选项卡-->
+			<div class="weui_tab_bd" style="hidden;background: #ebecee;">
+				<!--球馆加盟选项课-->
+				<div class="part">
+					<!--球馆加盟头部-->
+					<div class="weui_cells">
+						<div class="weui_cell">
+							<div class="weui_cell_bd weui_cell_primary f14">
+								<p><span>上海市松江区</span><span class="iconfont icon-dingwei f15"></span></p>
+							</div>
+							<div class="weui_cell right-P f12">
+								<div class="form-item item-line" id="select_contact">
+									<div class="pc-box">
+										<input type="hidden" name="contact_province_code" data-id="0001" id="contact_province_code" value="" data-province-name="">
+										<input type="hidden" name="contact_city_code" id="contact_city_code" value="" data-city-name="">
+										<span data-city-code="510100" data-province-code="510000" data-district-code="510105" id="show_contact">四川省 成都市 青羊区</span>
+									</div>
+								</div>
+								<div class="weui_cell_hd iconfont icon-unfold"></div>
+							</div>
+						</div>
+					</div>
+					<!--球馆列表-->
+					<div class="router-view">
+						<div style="margin-bottom: 10px; overflow: hidden;">
+							<a href="details_arena.html">
+								<div class="vux-masker-box">
+									<div class="m-img" style="background-image: url(&quot;https://cdn.xiaotaojiang.com/uploads/82/1572ec37969ee263735262dc017975/_.jpg&quot;);"></div>
+									<div class="vux-masker">
+										<div class="m-title">
+											<h4>洗颜新潮流人气洁面皂排行榜人气洁面皂排行榜</h4>
+											<p class="m-time f14">上海市松江区车墩镇</p>
+										</div>
+									</div>
+									<p class="distance f14">1.8km</p>
+								</div>
+							</a>
+						</div>
+						<div style="margin-bottom: 10px; overflow: hidden;">
+							<a href="details_arena.html">
+								<div class="vux-masker-box">
+									<div class="m-img" style="background-image: url(&quot;https://cdn.xiaotaojiang.com/uploads/59/b22e0e62363a4a652f28630b3233b9/_.jpg&quot;);"></div>
+									<div class="vux-masker">
+										<div class="m-title">
+											<h4>美容用品 &amp; 日用品（上）</h4>
+											<p class="m-time f14">上海市松江区车墩镇</p>
+										</div>
+									</div>
+									<p class="distance f14">1.8km</p>
+								</div>
+							</a>
+						</div>
+						<div style="margin-bottom: 10px; overflow: hidden;">
+							<a href="details_arena.html">
+								<div class="vux-masker-box">
+									<div class="m-img" style="background-image: url(&quot;https://cdn.xiaotaojiang.com/uploads/56/4b3601364b86fdfd234ef11d8712ad/_.jpg&quot;);"></div>
+									<div class="vux-masker">
+										<div class="m-title">
+											<h4>远离车内毒气，日本车载空气净化器精选</h4>
+											<p class="m-time f14">上海市松江区车墩镇</p>
+										</div>
+									</div>
+									<p class="distance f14">1.8km</p>
+								</div>
+							</a>
+						</div>
+						<div style="margin-bottom: 10px; overflow: hidden;">
+							<a href="details_arena.html">
+								<div class="vux-masker-box">
+									<div class="m-img" style="background-image: url(&quot;https://cdn.xiaotaojiang.com/uploads/56/4b3601364b86fdfd234ef11d8712ad/_.jpg&quot;);"></div>
+									<div class="vux-masker">
+										<div class="m-title">
+											<h4>VUX</h4>
+											<p class="m-time f14">上海市松江区车墩镇</p>
+										</div>
+									</div>
+									<p class="distance f14">1.8km</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--底部导航-->
+			<div class="weui_tabbar ">
+				<a href="index.html" class="weui_tabbar_item">
+					<div class="weui_tabbar_icon iconfont icon-wei-fangzi"></div>
+					<p class="weui_tabbar_label f12">首页</p>
+				</a>
+				<a href="arena.html" class="weui_tabbar_item weui_bar_item_on">
+					<div class="weui_tabbar_icon iconfont icon-yi-jiameng"></div>
+					<p class="weui_tabbar_label f12">球馆加盟</p>
+				</a>
+				<a href="shop.html" class="weui_tabbar_item">
+					<div class="weui_tabbar_icon iconfont icon-wei-gouwu"></div>
+					<p class="weui_tabbar_label f12">乐众商城</p>
+				</a>
+				<a href="personal.html" class="weui_tabbar_item">
+					<div class="weui_tabbar_icon iconfont icon-wei-geren"></div>
+					<p class="weui_tabbar_label f12">个人设置</p>
+				</a>
+			</div>
+		</div>
+		<script src="js/zepto.min.js"></script>
+		<!--无缝滚动插件-->
+		<script src="js/iscroll.js"></script>
+		<script src="js/areaData_v2.js"></script>
+		<script src="js/iosSelect.js"></script>
+		<script type="text/javascript">
+			var selectContactDom = $('#select_contact');
+			var showContactDom = $('#show_contact');
+			var contactProvinceCodeDom = $('#contact_province_code');
+			var contactCityCodeDom = $('#contact_city_code');
+			selectContactDom.bind('click', function() {
+				var sccode = showContactDom.attr('data-city-code');
+				var scname = showContactDom.attr('data-city-name');
+				var oneLevelId = showContactDom.attr('data-province-code');
+				var twoLevelId = showContactDom.attr('data-city-code');
+				var threeLevelId = showContactDom.attr('data-district-code');
+				var iosSelect = new IosSelect(3, [iosProvinces, iosCitys, iosCountys], {
+					title: '地址选择',
+					itemHeight: 35,
+					relation: [1, 1, 0, 0],
+					oneLevelId: oneLevelId,
+					twoLevelId: twoLevelId,
+					threeLevelId: threeLevelId,
+					callback: function(selectOneObj, selectTwoObj, selectThreeObj) {
+						contactProvinceCodeDom.val(selectOneObj.id);
+						contactProvinceCodeDom.attr('data-province-name', selectOneObj.value);
+						contactCityCodeDom.val(selectTwoObj.id);
+						contactCityCodeDom.attr('data-city-name', selectTwoObj.value);
+						console.log(selectOneObj.id, selectOneObj, twoLevelId);
+						showContactDom.attr('data-province-code', selectOneObj.id);
+						showContactDom.attr('data-city-code', selectTwoObj.id);
+						showContactDom.attr('data-district-code', selectThreeObj.id);
+						showContactDom.html(selectOneObj.value + ' ' + selectTwoObj.value + ' ' + selectThreeObj.value);
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>
